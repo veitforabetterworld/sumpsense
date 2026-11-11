@@ -1,0 +1,8 @@
+R_0402_1005Metric.step, C_0402_1005Metric.step and
+UQFN-20-1EP_3x3mm_P0.4mm_EP1.85x1.85mm.step are from the KiCad
+3D model library (kicad-packages3D), license CC-BY-SA 4.0.
+https://gitlab.com/kicad/libraries/kicad-packages3D
+
+Grove_1x04.step is a simple stand-in body for this board. The KiCad
+library has no STEP for the Grove right-angle socket. The programming
+holes stay empty and have no model.

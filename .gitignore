@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.kicad_prl
+firmware/.venv-updi/
+firmware/U1.hex
+firmware/U2.hex
