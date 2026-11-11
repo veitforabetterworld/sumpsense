@@ -1,6 +1,6 @@
 # Wasserstand Zigbee
 
-Zweite Platine neben [`wasserstand-14mm`](../wasserstand-14mm/README.md). Ein **ESP32-H2**, **16** kapazitive Stufen, Inverted-F auf der Platine, Low-Side-Ausgang für ein **5-V-Magnetventil**. Kein I2C, kein zweiter Controller.
+Zweite Platine neben [`sumpgauge-14mm`](../sumpgauge-14mm/README.md). Ein **ESP32-H2**, **16** kapazitive Stufen, Inverted-F auf der Platine, Low-Side-Ausgang für ein **5-V-Magnetventil**. Kein I2C, kein zweiter Controller.
 
 Platine **14,0 mm** breit, **1,6 mm**, zwei Lagen. Rohr **14,5 mm**. Stufenabstand **5 mm**, Messlänge etwa **8 cm**. Elektrodenmaß wie die I2C-Platine (3,4 mm × 12,5 mm). **M2,5** bei y = 7 mm, Bohrung 2,7 mm, damit der bestehende Clip passt. Antenne, Quarz, H2 und alle Löcher bleiben auf der trockenen Seite des Lochs.
 

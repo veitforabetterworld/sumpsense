@@ -1,6 +1,6 @@
 """Zigbee-Wasserstand, 14 mm breit, 16 Stufen.
 
-Zweite Platine. Die I2C-Platine unter wasserstand-14mm bleibt unberührt.
+Zweite Platine. Die I2C-Platine unter sumpgauge-14mm bleibt unberührt.
 Quelle für Bauteile, Netze und Lage. Platine: python3 gen_pcb.py
 
 Koordinaten: x = 0 am trockenen Ende (Antenne), wächst zur nassen Spitze.

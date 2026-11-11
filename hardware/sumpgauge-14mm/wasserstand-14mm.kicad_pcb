@@ -48,7 +48,7 @@
 		(property "Value" "Grove" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "83798e61-1be3-4486-9422-791f744b8514") (effects (font (size 0.4 0.4) (thickness 0.06))))
 		(fp_rect (start -9.6 -6.1) (end 1.5 6.1) (stroke (width 0.05) (type solid)) (fill no) (layer "F.Fab") (uuid "3bae5995-9495-4918-b15e-fcb756de7bed"))
 		(fp_rect (start -10.0 -6.4) (end 1.8 6.4) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") (uuid "181d57e0-17c8-4696-88b6-6abcc37f60dc"))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/Grove_1x04.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/Grove_1x04.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -71,7 +71,7 @@
 		(fp_rect (start -1.5 -1.5) (end 1.5 1.5) (stroke (width 0.05) (type solid)) (fill no) (layer "F.Fab") (uuid "00fc43df-a683-4d4e-ae16-9f51438edfd8"))
 		(fp_rect (start -2.0 -2.0) (end 2.0 2.0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") (uuid "d27f8e39-af66-4ac2-b3b1-7643f1b9663d"))
 		(fp_circle (center -1.85 -1.85) (end -1.65 -1.85) (stroke (width 0.1) (type solid)) (fill yes) (layer "F.SilkS") (uuid "c7d194e2-e2b0-4db2-8133-d13f340777a2"))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/UQFN-20-1EP_3x3mm_P0.4mm_EP1.85x1.85mm.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/UQFN-20-1EP_3x3mm_P0.4mm_EP1.85x1.85mm.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 90))
@@ -109,7 +109,7 @@
 		(fp_rect (start -1.5 -1.5) (end 1.5 1.5) (stroke (width 0.05) (type solid)) (fill no) (layer "F.Fab") (uuid "22fd8ddb-5b4f-420f-9328-0a92e8c26ce5"))
 		(fp_rect (start -2.0 -2.0) (end 2.0 2.0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") (uuid "7e92b93e-33f9-4107-a206-6a4ed9c29298"))
 		(fp_circle (center -1.85 -1.85) (end -1.65 -1.85) (stroke (width 0.1) (type solid)) (fill yes) (layer "F.SilkS") (uuid "088cf8ad-5624-4a44-9004-9fd9731d92e9"))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/UQFN-20-1EP_3x3mm_P0.4mm_EP1.85x1.85mm.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/UQFN-20-1EP_3x3mm_P0.4mm_EP1.85x1.85mm.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 90))
@@ -144,7 +144,7 @@
 		(attr smd)
 		(property "Reference" "R1" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "2ee9ba19-5784-41fd-a8ac-74ba44792166") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "4.7k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "07914385-6709-4519-b473-b7e4ffa025ca") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -160,7 +160,7 @@
 		(attr smd)
 		(property "Reference" "R2" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "746dfec7-3a2b-4b82-8a1c-ab6570f88044") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "4.7k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "4dea020a-5a5a-4822-8f14-7f12eb3f3f44") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -176,7 +176,7 @@
 		(attr smd)
 		(property "Reference" "C1" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "25647f40-d36f-4599-9ef8-7b38ced1c53f") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "100nF" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "fcd3c5d1-5554-4ab6-ba75-5c7f967f33ea") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/C_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/C_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -192,7 +192,7 @@
 		(attr smd)
 		(property "Reference" "C2" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "5caed73d-928c-4492-b977-0e6fb31d2f69") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "4.7uF" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "cb58dbf4-08de-405a-8e42-3d4661f29833") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/C_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/C_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -208,7 +208,7 @@
 		(attr smd)
 		(property "Reference" "C3" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "8f8f6a2d-ec32-406d-9354-7b96d284a07b") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "100nF" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "d3f545f5-a7a6-416a-9db3-60e7a38f9960") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/C_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/C_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -224,7 +224,7 @@
 		(attr smd)
 		(property "Reference" "C4" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "bc60443d-04ca-4373-81cf-11b3151ef2eb") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "4.7uF" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e0497a1e-09e1-4223-844d-743682fb2f67") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/C_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/C_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -240,7 +240,7 @@
 		(attr smd)
 		(property "Reference" "R5" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "895050ef-7c4d-4796-99ab-c80729fb889d") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "c81b30ba-2ad5-42b2-baa7-3ba665c8239b") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -256,7 +256,7 @@
 		(attr smd)
 		(property "Reference" "R6" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "268bbf91-dd2e-43ee-834b-e8917bc561bf") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "bc48491c-f920-49fd-bcfe-51a0cab8ded5") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -272,7 +272,7 @@
 		(attr smd)
 		(property "Reference" "R7" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f5cec44e-6c05-489b-b3d5-1ecaf5d49963") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "9ce940bd-a0b9-4913-9d7e-5a2a0b8992dd") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -288,7 +288,7 @@
 		(attr smd)
 		(property "Reference" "R8" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "7447bed1-8863-4d33-a99c-a3af82c9d47f") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "a70dc963-633f-47df-b85a-6d0ba7d70eb7") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -304,7 +304,7 @@
 		(attr smd)
 		(property "Reference" "R12" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "ac6a0b66-43aa-46b7-94bc-c802f0923309") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "c2f311bd-32be-4627-8cb6-0ffa965a6c2f") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -320,7 +320,7 @@
 		(attr smd)
 		(property "Reference" "R11" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "12c92d02-37ab-4ccc-9072-30bd3f70b050") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "d3ed610c-5d4c-458f-bdbd-230a33a40260") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -336,7 +336,7 @@
 		(attr smd)
 		(property "Reference" "R10" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "4f6f560e-7b0b-4227-affa-1a0ae6001ac4") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "1e2fd84b-b1f9-41ad-a123-bcfe9da7bfe1") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -352,7 +352,7 @@
 		(attr smd)
 		(property "Reference" "R9" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "575a09f5-786c-4301-a37f-f6c9fd504536") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "d28f225e-10a4-458c-bb5b-eea42e7d7aec") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -368,7 +368,7 @@
 		(attr smd)
 		(property "Reference" "R16" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "957f15e8-a046-4afd-a55e-74669868a5bc") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "6dcec5be-e520-4030-b3d6-69f6322d44e0") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -384,7 +384,7 @@
 		(attr smd)
 		(property "Reference" "R13" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "9b505de0-83df-403b-be8f-6f92cf76c1e2") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "75dac355-5bf1-480d-b46c-f39aacb1b42f") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -400,7 +400,7 @@
 		(attr smd)
 		(property "Reference" "R14" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "630cc02b-bc15-4e4a-8a6c-0f68a7fd4ef0") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "89fda6e1-b3a0-4a8c-90b1-28a6f3bdefb2") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -416,7 +416,7 @@
 		(attr smd)
 		(property "Reference" "R15" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "b859e7dd-0e36-4342-989b-d5c140118ac2") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "6f5db88d-c673-40c8-a99d-fc0d5d118020") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -432,7 +432,7 @@
 		(attr smd)
 		(property "Reference" "R23" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "3bddc36e-51a3-4190-8471-945b7a9206b5") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "3171c46c-dbe3-4f85-a9db-e2c33378af4e") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -448,7 +448,7 @@
 		(attr smd)
 		(property "Reference" "R24" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "3214e880-2251-444f-a16b-b41b3026ac7b") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "246ed973-38c1-4c62-9f48-0eaf8dda92d3") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -464,7 +464,7 @@
 		(attr smd)
 		(property "Reference" "R25" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "69259ecb-fa14-4f49-a094-7e2e51cd02ac") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "79cb9469-6044-49f7-a974-ace4ddb67453") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -480,7 +480,7 @@
 		(attr smd)
 		(property "Reference" "R26" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "96954cf2-b731-4957-9e70-437d52c4dcd5") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "671e4538-5ca0-47fc-aef8-1ee3f08b684a") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -496,7 +496,7 @@
 		(attr smd)
 		(property "Reference" "R30" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "77a55418-e7cb-4dfb-99c8-705e59f683b9") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "cb68205a-6564-484b-bae8-a8260fde1c42") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -512,7 +512,7 @@
 		(attr smd)
 		(property "Reference" "R29" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "65511457-9aaf-461c-905d-80a7694a5909") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "3612996b-19bb-459a-8836-215e0789d510") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -528,7 +528,7 @@
 		(attr smd)
 		(property "Reference" "R28" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "f1fbe524-8280-4d7d-8fef-eda3be6bf862") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "827cc002-bd05-4b94-b13f-2fda7b00769b") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -544,7 +544,7 @@
 		(attr smd)
 		(property "Reference" "R27" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "e6bb9f33-5695-4f61-99d4-2dc18b47ec95") (effects (font (size 0.5 0.5) (thickness 0.08))))
 		(property "Value" "1k" (at 0 0 0) (layer "F.Fab") (hide yes) (uuid "c394d90f-c05b-47ca-ba01-930253a282fb") (effects (font (size 0.4 0.4) (thickness 0.06))))
-		(model "/home/vgoetz/projects/kapazitiver-wasserstandsensor/hardware/wasserstand-14mm/3d/R_0402_1005Metric.step"
+		(model "/home/vgoetz/projects/sumpgauge/hardware/sumpgauge-14mm/3d/R_0402_1005Metric.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
