@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "zig") (type "KiCad") (uri "${KIPRJMOD}/zig.kicad_sym") (options "") (descr "Eigene Symbole"))
+)

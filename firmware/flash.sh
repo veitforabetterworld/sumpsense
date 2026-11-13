@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# UPDI-Flash für WLS-14 (ATtiny1616). Nutzung: ./flash.sh u1|u2
+# UPDI-Flash für SUMPSENSE-24I (ATtiny1616). Nutzung: ./flash.sh u1|u2
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"

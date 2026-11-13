@@ -1,0 +1,74 @@
+(footprint "electrode"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(uuid "09defa1b-a577-4ff1-84b9-61204d0c0e48")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f8f36050-3a32-47f5-bce6-d44bf6a4f59b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "E11"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e66158dc-f180-48a4-8789-3e9ab9242ced")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fd7c1c6d-bdd2-464f-a180-5ad507de6a3f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68558c51-bd69-4a24-8f15-363a85a8cd5c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_text user "70 mm"
+		(at 0 -6.7 90)
+		(layer "F.SilkS")
+		(uuid "21364ae1-01b7-4e77-ad84-e22c677852da")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+			(justify right)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 3.4 13)
+		(layers "F.Cu")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "d13dc229-6694-4e79-80c9-e718b004416c")
+	)
+	(embedded_fonts no)
+	)

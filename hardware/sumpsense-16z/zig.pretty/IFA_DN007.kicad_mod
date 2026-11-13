@@ -1,0 +1,94 @@
+(footprint "IFA_DN007"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(uuid "0895862d-3111-476f-ab63-ea834645415c")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dd8b80dc-b32c-4f98-8c4d-bf8dffed43b8")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(property "Value" "DN007"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "80f3d73a-543e-469c-bbb1-d7a3a53e77ae")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e99fcd90-77ab-4b44-82b4-f91c6d12ac6b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "52683c4a-9395-4092-8638-5b42e4474e6b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(net_tie_pad_groups "1, 2")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy -0.23 -2.26) (xy -0.23 0.4) (xy 0.23 0.4) (xy 0.23 -2.46) (xy -0.68 -3.36) (xy -0.68 -4.07)
+			(xy -1.69 -4.07) (xy -1.69 -5.87) (xy 14.71 -5.87) (xy 14.71 -7.08) (xy -10.87 -7.08) (xy -10.87 -0.91)
+			(xy -4.04 -0.91) (xy -4.04 0.14) (xy -2.69 0.14) (xy -2.69 -0.85) (xy -1.89 -0.85) (xy -1.89 0.14)
+			(xy -0.68 0.14) (xy -0.68 -2.2) (xy -8.68 -2.2) (xy -8.68 -4.86) (xy -2.89 -4.86) (xy -2.89 -4.07)
+			(xy -3.89 -4.07) (xy -3.89 -2.86) (xy -0.82 -2.86)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "75009a30-9095-400e-8bcd-e33c12672d3d")
+	)
+	(pad "1" smd rect
+		(at 0 0.25)
+		(size 0.46 0.3)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(uuid "deab6a43-b5de-48b3-b486-51b3a102f8ee")
+	)
+	(pad "2" smd rect
+		(at -3.365 0.14)
+		(size 1.35 0.5)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(uuid "b08e4c9c-7b3a-4110-8fd6-e7c2032dd427")
+	)
+	(pad "2" smd rect
+		(at -1.285 0.14)
+		(size 1.21 0.5)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(uuid "98617ad7-3ccf-4bab-972f-aa9f3d7c6c15")
+	)
+	(embedded_fonts no)
+	)

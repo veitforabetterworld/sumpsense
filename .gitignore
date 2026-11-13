@@ -4,3 +4,5 @@ __pycache__/
 firmware/.venv-updi/
 firmware/U1.hex
 firmware/U2.hex
+.history/
+~*.lck

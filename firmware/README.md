@@ -15,7 +15,7 @@ Community-Firmware fixiert v. a. Kalibrierung nach Power-On; Protokoll weicht ab
 
 ## Flashen
 
-Voraussetzung: [Adafruit UPDI Friend](https://learn.adafruit.com/adafruit-updi-friend), Verdrahtung wie `hardware/sumpgauge-14mm/README.md` (nur **einen** Chip, Grove ab).
+Voraussetzung: [Adafruit UPDI Friend](https://learn.adafruit.com/adafruit-updi-friend), Verdrahtung wie `hardware/sumpsense-24i/README.md` (nur **einen** Chip, Grove ab).
 
 ```bash
 cd firmware

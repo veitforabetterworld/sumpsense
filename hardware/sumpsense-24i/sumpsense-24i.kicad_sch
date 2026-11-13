@@ -1,0 +1,2433 @@
+(kicad_sch
+	(version 20250114)
+	(generator "gen_sch")
+	(generator_version "10.0")
+	(uuid "8a6575ee-1a96-569d-8ebd-13cdc074864e")
+	(paper "A3")
+	(title_block
+		(title "SumpSense-24i")
+		(rev "2")
+		(comment 1 "2x ATtiny1616, 24 Stufen, I2C. Netze aus der Platine")
+	)
+	(lib_symbols
+			(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "Connector_Generic:Conn_01x06"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x06"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x06_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "MCU_Microchip_ATtiny:ATtiny1616-M"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -12.7 21.59 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "ATtiny1616-M"
+				(at 2.54 -21.59 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3216_ATtiny1616-data-sheet-40001997B.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "20MHz, 16kB Flash, 2kB SRAM, 256B EEPROM, VQFN-20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "AVR 8bit Microcontroller tinyAVR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.4mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ATtiny1616-M_0_1"
+				(rectangle
+					(start -12.7 -20.32)
+					(end 12.7 20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ATtiny1616-M_1_1"
+				(pin bidirectional line
+					(at 15.24 12.7 180)
+					(length 2.54)
+					(name "PA2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 10.16 180)
+					(length 2.54)
+					(name "PA3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -22.86 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 22.86 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 7.62 180)
+					(length 2.54)
+					(name "PA4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 5.08 180)
+					(length 2.54)
+					(name "PA5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "PA6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "PA7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -17.78 180)
+					(length 2.54)
+					(name "PB5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 2.54)
+					(name "PB4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 2.54)
+					(name "PB3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -10.16 180)
+					(length 2.54)
+					(name "PB2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -7.62 180)
+					(length 2.54)
+					(name "PB1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "PB0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -5.08 0)
+					(length 2.54)
+					(name "PC0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -7.62 0)
+					(length 2.54)
+					(name "PC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -10.16 0)
+					(length 2.54)
+					(name "PC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -12.7 0)
+					(length 2.54)
+					(name "PC3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 17.78 180)
+					(length 2.54)
+					(name "~{RESET}/PA0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 15.24 180)
+					(length 2.54)
+					(name "PA1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -22.86 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "power:VCC"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VCC"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VCC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol (lib_id "MCU_Microchip_ATtiny:ATtiny1616-M") (at 119.38 88.90 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "22d3987e-30db-5701-96c3-e0a59d0575bf")
+		(property "Reference" "U1" (at 106.68 64.77 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "ATtiny1616" (at 121.92 64.77 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_DFN_QFN:VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm" (at 119.38 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "2a5a6888-7965-58ce-8a69-53b7822d6d18"))
+		(pin "2" (uuid "9b69179d-4a10-5cb2-82f3-6e817b96f9a9"))
+		(pin "3" (uuid "3aee7fed-7fdf-5b31-b775-aa6757c8a2bd"))
+		(pin "4" (uuid "f4a33d42-ff3d-5068-8f8e-2246a02d933c"))
+		(pin "5" (uuid "0e38faf3-a7c7-5fd8-b257-7b4f04a8b2a9"))
+		(pin "6" (uuid "dd2f559d-1551-5aa9-8555-96470db2314e"))
+		(pin "7" (uuid "1bd4ba02-21ee-58bd-8fb9-3aec87b24cb0"))
+		(pin "8" (uuid "4f4f7ec6-7d4b-5c9b-9be2-ea3784786239"))
+		(pin "9" (uuid "a6447794-ed3b-57a8-adb1-e13b6823dde6"))
+		(pin "10" (uuid "4f185559-da8c-5ca3-ac3e-a9ca0e6d9136"))
+		(pin "11" (uuid "e0766a5d-26a8-524e-b9c2-2d5fc69b6190"))
+		(pin "12" (uuid "5332128c-6c2f-5a88-adb4-a6b07791ed36"))
+		(pin "13" (uuid "f7893cd7-364b-534d-83b3-4cb06e808721"))
+		(pin "14" (uuid "4c7c59fb-a631-508f-8741-040173c5cce6"))
+		(pin "15" (uuid "4e7b0772-3b0f-5a03-a6ac-fc7598c0ac63"))
+		(pin "16" (uuid "8f8f6bd2-b822-5ebc-abd5-2ae5c4e102e4"))
+		(pin "17" (uuid "2fc5cc89-2526-55fb-b0b1-1257d58ceb4f"))
+		(pin "18" (uuid "aa7a0f2a-0a6d-541a-8ba6-d5a073782e80"))
+		(pin "19" (uuid "a731dc09-bd7d-5fbc-97d6-946fad898a87"))
+		(pin "20" (uuid "7a445b76-c88b-51ef-837e-7a0f92aa8813"))
+		(pin "21" (uuid "b7214727-d407-5d97-b130-61feb7ce0e9b"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "U1") (unit 1))))
+	)
+	(symbol (lib_id "MCU_Microchip_ATtiny:ATtiny1616-M") (at 119.38 195.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b8d920cc-ad36-5b9d-bd4e-71d90f020af0")
+		(property "Reference" "U2" (at 106.68 171.45 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "ATtiny1616" (at 121.92 171.45 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_DFN_QFN:VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm" (at 119.38 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "271bcd72-2a70-5d50-ad62-5c197cdfbbf9"))
+		(pin "2" (uuid "b2a61bc0-7549-5014-8476-106bb52eac0b"))
+		(pin "3" (uuid "ba8dc483-04a9-52e9-881e-124aea3d2f42"))
+		(pin "4" (uuid "28616b88-45da-531e-b4b8-ad8e996cd4e7"))
+		(pin "5" (uuid "7970022f-76ca-52ca-815c-dac8f4c46aa8"))
+		(pin "6" (uuid "be76b54f-5a62-5691-b1da-85fbf15c4d56"))
+		(pin "7" (uuid "e55bcd07-3925-52d8-b1bb-de50d3f9f552"))
+		(pin "8" (uuid "917b806c-535e-5928-a46c-41b28c48b8c6"))
+		(pin "9" (uuid "2cb825e4-9b4f-575a-9de1-3ca7d9680b35"))
+		(pin "10" (uuid "9ea5ffb1-4bc7-52e8-8984-7176c5b21db7"))
+		(pin "11" (uuid "8409a7a9-467d-56c1-a512-eb954b72b4ab"))
+		(pin "12" (uuid "dc72e1c8-2dc3-561f-962d-1e52c94dac0a"))
+		(pin "13" (uuid "05fb2e46-763d-5b8b-a5bd-6a04f0699f6a"))
+		(pin "14" (uuid "0443f87e-5f96-54c4-9b7c-92f877a35efe"))
+		(pin "15" (uuid "d88e3528-738f-5898-a8c4-b5d80401d1cc"))
+		(pin "16" (uuid "a9b2137c-4cad-5a5d-a4cd-ccc6e57a90f6"))
+		(pin "17" (uuid "932e9cef-c96b-58e3-8817-a9763a37b9b3"))
+		(pin "18" (uuid "cd70331c-ae57-5c27-86cd-02773cb5fcac"))
+		(pin "19" (uuid "15d475e6-265a-5e7e-a0f8-eabb034204fe"))
+		(pin "20" (uuid "9c082a4e-f5e6-5d77-b37a-27b89485c36c"))
+		(pin "21" (uuid "e9c4d9a4-e2c5-5826-adf4-bdfb114181dd"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "U2") (unit 1))))
+	)
+	(wire (pts (xy 119.38 111.76) (xy 119.38 114.30)) (stroke (width 0) (type default)) (uuid "ddebf404-f6bb-5b65-8db8-80752f99c56c"))
+	(wire (pts (xy 119.38 114.30) (xy 119.38 116.84)) (stroke (width 0) (type default)) (uuid "e7d1dbf4-6b95-5652-bfb6-99fa3354cb64"))
+	(symbol (lib_id "power:GND") (at 119.38 116.84 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9fe1c4eb-21f7-5169-95a8-034d5cdc5bff")
+		(property "Reference" "#PWR001" (at 119.38 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "GND" (at 119.38 120.08 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "6977e290-e965-58d1-aed5-4f78d7121021"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR001") (unit 1))))
+	)
+	(junction (at 119.38 114.30) (diameter 0) (color 0 0 0 0) (uuid "400fde74-e3ce-5706-949b-1dcd800d3c2f"))
+	(symbol (lib_id "power:PWR_FLAG") (at 119.38 114.30 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e775762a-7ce4-514e-9ce8-a8130d87cb11")
+		(property "Reference" "#FLG002" (at 119.38 112.40 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "PWR_FLAG" (at 119.38 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "35dfbd0d-3b07-5eeb-a211-b3f59c70eb3b"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#FLG002") (unit 1))))
+	)
+	(wire (pts (xy 119.38 66.04) (xy 119.38 63.50)) (stroke (width 0) (type default)) (uuid "1e79964f-de06-56e1-83cc-402a3ee12cc3"))
+	(symbol (lib_id "power:VCC") (at 119.38 63.50 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1d7598b2-ecd4-5faa-88cc-5c965700c75b")
+		(property "Reference" "#PWR003" (at 119.38 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "VCC" (at 119.38 60.26 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "e1869397-7dcc-58b6-bafa-110c4e8d0646"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR003") (unit 1))))
+	)
+	(wire (pts (xy 119.38 218.44) (xy 119.38 220.98)) (stroke (width 0) (type default)) (uuid "bfbd00b3-5f74-5cb0-a852-09657e7c20e2"))
+	(wire (pts (xy 119.38 220.98) (xy 119.38 223.52)) (stroke (width 0) (type default)) (uuid "b5366640-e02b-53ec-add7-d31bf79dcca8"))
+	(symbol (lib_id "power:GND") (at 119.38 223.52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "573b10df-ecf3-5cfd-8d9d-d872cf9f2d0b")
+		(property "Reference" "#PWR004" (at 119.38 227.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "GND" (at 119.38 226.76 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "265e3ebc-20b9-5d5b-a844-4160da6fd4ed"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR004") (unit 1))))
+	)
+	(wire (pts (xy 119.38 172.72) (xy 119.38 170.18)) (stroke (width 0) (type default)) (uuid "819e7933-94ab-50dc-9975-d5d918df8ddd"))
+	(symbol (lib_id "power:VCC") (at 119.38 170.18 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a1bcd146-02b8-53c6-b11a-aa1718460423")
+		(property "Reference" "#PWR005" (at 119.38 166.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "VCC" (at 119.38 166.94 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "757ff70b-a299-5b0f-961a-af6899209787"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR005") (unit 1))))
+	)
+	(wire (pts (xy 134.62 78.74) (xy 139.70 78.74)) (stroke (width 0) (type default)) (uuid "c9e395e4-f2f5-5514-97eb-005405bea715"))
+	(wire (pts (xy 139.70 78.74) (xy 139.70 81.28)) (stroke (width 0) (type default)) (uuid "85509528-59cd-520a-b222-80d1828c8483"))
+	(symbol (lib_id "power:GND") (at 139.70 81.28 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b248155f-df30-57f4-93ee-db84b583639b")
+		(property "Reference" "#PWR006" (at 139.70 85.09 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "GND" (at 139.70 84.52 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "f2d1528e-5ab4-5854-b90f-5fa0968d31e2"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR006") (unit 1))))
+	)
+	(wire (pts (xy 134.62 185.42) (xy 139.70 185.42)) (stroke (width 0) (type default)) (uuid "372de9e8-6386-5f13-b04d-97892482978d"))
+	(symbol (lib_id "power:VCC") (at 139.70 185.42 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "790b7015-fd23-5571-b8f1-124646c556b7")
+		(property "Reference" "#PWR007" (at 139.70 185.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "VCC" (at 143.00 185.42 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "8e5bc19a-2fe0-53df-be9c-86e9362f32ea"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR007") (unit 1))))
+	)
+	(symbol (lib_id "Device:C") (at 99.06 69.85 180) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7738075f-0041-5a65-aaba-86797dc8807a")
+		(property "Reference" "C1" (at 101.60 68.58 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "100nF" (at 101.60 71.12 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 99.06 69.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "30d32149-979f-542c-b2c0-824f912a3c3a"))
+		(pin "2" (uuid "2dc918b2-16f0-5267-8cff-526ca45c80ee"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "C1") (unit 1))))
+	)
+	(wire (pts (xy 99.06 66.04) (xy 99.06 63.50)) (stroke (width 0) (type default)) (uuid "2d2d25cb-e040-5907-9e13-eb0630979ea3"))
+	(wire (pts (xy 99.06 73.66) (xy 99.06 76.20)) (stroke (width 0) (type default)) (uuid "7a73e019-5ff6-52b9-b891-e7d3e0fdb1d3"))
+	(symbol (lib_id "power:GND") (at 99.06 76.20 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "269c2442-0df9-5714-af53-c0e8ee12e190")
+		(property "Reference" "#PWR008" (at 99.06 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "GND" (at 99.06 79.44 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "9dff7647-e6af-5f9a-bbe6-a13ce7c3177d"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR008") (unit 1))))
+	)
+	(symbol (lib_id "Device:C") (at 88.90 69.85 180) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "628297ed-9439-55d5-8b90-43d451af0ca3")
+		(property "Reference" "C2" (at 91.44 68.58 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "4.7uF" (at 91.44 71.12 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 88.90 69.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9d443906-1a9b-5152-902f-00661719723d"))
+		(pin "2" (uuid "b1e9517e-92cc-5577-9bef-07d4200930b0"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "C2") (unit 1))))
+	)
+	(wire (pts (xy 88.90 66.04) (xy 88.90 63.50)) (stroke (width 0) (type default)) (uuid "8f4d8d43-d934-51f4-b9ec-d6a89f90980e"))
+	(wire (pts (xy 88.90 73.66) (xy 88.90 76.20)) (stroke (width 0) (type default)) (uuid "8a2631e9-5728-54af-8818-1b8d03e7e1db"))
+	(symbol (lib_id "power:GND") (at 88.90 76.20 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c420e23f-54f7-570f-b5e0-7e5e6ab54478")
+		(property "Reference" "#PWR009" (at 88.90 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "GND" (at 88.90 79.44 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "fe27f283-880f-5dcf-b4b2-99b2612888d8"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR009") (unit 1))))
+	)
+	(wire (pts (xy 88.90 63.50) (xy 99.06 63.50)) (stroke (width 0) (type default)) (uuid "2ddff192-a547-58ae-8b94-f6815ae07509"))
+	(wire (pts (xy 99.06 63.50) (xy 119.38 63.50)) (stroke (width 0) (type default)) (uuid "eb81b07d-d560-58d2-8f27-cb7f954960e4"))
+	(junction (at 99.06 63.50) (diameter 0) (color 0 0 0 0) (uuid "5d691758-ff13-5f4f-8c0d-ace62b6c027b"))
+	(junction (at 119.38 63.50) (diameter 0) (color 0 0 0 0) (uuid "ab2ce08d-9839-5513-9dbf-8eb4fe8a0bef"))
+	(symbol (lib_id "power:PWR_FLAG") (at 88.90 63.50 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "794e61d2-5cc7-5e21-b998-bf511ec53498")
+		(property "Reference" "#FLG010" (at 88.90 61.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "PWR_FLAG" (at 88.90 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "60ee278a-2e47-5119-a7d8-8e6a3165436a"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#FLG010") (unit 1))))
+	)
+	(symbol (lib_id "Device:C") (at 99.06 176.53 180) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "83de16f0-9d16-55f2-b41b-a16bd3d6343f")
+		(property "Reference" "C3" (at 101.60 175.26 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "100nF" (at 101.60 177.80 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 99.06 176.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "0f1cb7b2-1140-5c1f-bff9-146f768aabc6"))
+		(pin "2" (uuid "740cad1f-f69e-5499-a55c-51104287e538"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "C3") (unit 1))))
+	)
+	(wire (pts (xy 99.06 172.72) (xy 99.06 170.18)) (stroke (width 0) (type default)) (uuid "330e2865-146f-52b7-8868-cb130a93341c"))
+	(wire (pts (xy 99.06 180.34) (xy 99.06 182.88)) (stroke (width 0) (type default)) (uuid "150251fa-1c16-5013-bf3d-4b8c7352d72a"))
+	(symbol (lib_id "power:GND") (at 99.06 182.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5a3f452c-0925-5a91-9903-a9fec3748a25")
+		(property "Reference" "#PWR011" (at 99.06 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "GND" (at 99.06 186.12 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "bbee44fd-a506-5c8b-9e90-db5b6d635309"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR011") (unit 1))))
+	)
+	(symbol (lib_id "Device:C") (at 88.90 176.53 180) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "41c14fc4-b987-5abd-a82f-3cb612d4925c")
+		(property "Reference" "C4" (at 91.44 175.26 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "4.7uF" (at 91.44 177.80 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 88.90 176.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "27ac59f7-108a-530d-af01-111b33a74fa8"))
+		(pin "2" (uuid "5ceac3fb-b716-5076-bcc1-1547edfac000"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "C4") (unit 1))))
+	)
+	(wire (pts (xy 88.90 172.72) (xy 88.90 170.18)) (stroke (width 0) (type default)) (uuid "23ac5b09-9a7a-5991-a988-293f1bd0a584"))
+	(wire (pts (xy 88.90 180.34) (xy 88.90 182.88)) (stroke (width 0) (type default)) (uuid "695536ec-ecdd-5541-9a77-a775f0de9c4a"))
+	(symbol (lib_id "power:GND") (at 88.90 182.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5f3a8c65-fa57-518c-874e-45674a677aed")
+		(property "Reference" "#PWR012" (at 88.90 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "GND" (at 88.90 186.12 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "905d2a8d-8a19-51f6-8fbe-5f08e8d5ca8f"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR012") (unit 1))))
+	)
+	(wire (pts (xy 88.90 170.18) (xy 99.06 170.18)) (stroke (width 0) (type default)) (uuid "2ac431d4-7aed-5621-842b-6d4319a4d000"))
+	(wire (pts (xy 99.06 170.18) (xy 119.38 170.18)) (stroke (width 0) (type default)) (uuid "5bf948ca-5e90-5122-b326-37551a89bad1"))
+	(junction (at 99.06 170.18) (diameter 0) (color 0 0 0 0) (uuid "57463da9-9568-5c0f-a74b-8ac55fb39290"))
+	(junction (at 119.38 170.18) (diameter 0) (color 0 0 0 0) (uuid "f893db16-d967-57e9-b771-b832ba23c359"))
+	(wire (pts (xy 134.62 81.28) (xy 172.72 81.28)) (stroke (width 0) (type default)) (uuid "5b4b5944-6e58-5e83-a4b3-c26b7ce4a457"))
+	(wire (pts (xy 134.62 83.82) (xy 152.40 83.82)) (stroke (width 0) (type default)) (uuid "45c39b65-e74d-51bb-a9d9-9325cd35cfbd"))
+	(wire (pts (xy 152.40 83.82) (xy 152.40 86.36)) (stroke (width 0) (type default)) (uuid "ff4358b2-4845-5169-96af-a9558e070855"))
+	(wire (pts (xy 152.40 86.36) (xy 172.72 86.36)) (stroke (width 0) (type default)) (uuid "8b4be079-7101-5bc1-8546-b354bd4de757"))
+	(wire (pts (xy 134.62 86.36) (xy 149.86 86.36)) (stroke (width 0) (type default)) (uuid "f6a5cd49-3fee-5de0-bc35-584856358749"))
+	(wire (pts (xy 149.86 86.36) (xy 149.86 91.44)) (stroke (width 0) (type default)) (uuid "364ffab1-630e-5c03-9cca-4601909d5ab7"))
+	(wire (pts (xy 149.86 91.44) (xy 172.72 91.44)) (stroke (width 0) (type default)) (uuid "c0b5be8a-8ae0-5761-9a66-79a37f24a2c7"))
+	(wire (pts (xy 134.62 88.90) (xy 147.32 88.90)) (stroke (width 0) (type default)) (uuid "5caa8e8d-e8d7-573c-b23b-99198a921e4f"))
+	(wire (pts (xy 147.32 88.90) (xy 147.32 96.52)) (stroke (width 0) (type default)) (uuid "30d6492d-6c9d-5445-802d-f453e781d59f"))
+	(wire (pts (xy 147.32 96.52) (xy 172.72 96.52)) (stroke (width 0) (type default)) (uuid "c009c845-ebd9-53b4-8eed-ad682f9c2f75"))
+	(wire (pts (xy 134.62 93.98) (xy 144.78 93.98)) (stroke (width 0) (type default)) (uuid "ebfb4c1e-4130-5153-b8cb-4a27bd38be88"))
+	(wire (pts (xy 144.78 93.98) (xy 144.78 101.60)) (stroke (width 0) (type default)) (uuid "2f6a90f6-0a75-5316-bf68-db8a957081e1"))
+	(wire (pts (xy 144.78 101.60) (xy 172.72 101.60)) (stroke (width 0) (type default)) (uuid "0894363b-5598-58f0-ac34-5a917f780c7e"))
+	(wire (pts (xy 134.62 96.52) (xy 142.24 96.52)) (stroke (width 0) (type default)) (uuid "c231b70c-55e1-5a2a-9ae9-6978a713d227"))
+	(wire (pts (xy 142.24 96.52) (xy 142.24 106.68)) (stroke (width 0) (type default)) (uuid "dabb894f-4807-5afe-bd30-b4e950907557"))
+	(wire (pts (xy 142.24 106.68) (xy 172.72 106.68)) (stroke (width 0) (type default)) (uuid "75f9596c-77c1-5fa0-ac8d-2403386b6f1c"))
+	(wire (pts (xy 134.62 104.14) (xy 139.70 104.14)) (stroke (width 0) (type default)) (uuid "51e50393-9715-564e-9b82-43aa7f245e24"))
+	(wire (pts (xy 139.70 104.14) (xy 139.70 111.76)) (stroke (width 0) (type default)) (uuid "655b9e44-b12d-5d83-8e9c-ecb684df0a48"))
+	(wire (pts (xy 139.70 111.76) (xy 172.72 111.76)) (stroke (width 0) (type default)) (uuid "ed71f465-b0ac-59ae-a9b3-4633d9bd2684"))
+	(wire (pts (xy 134.62 106.68) (xy 137.16 106.68)) (stroke (width 0) (type default)) (uuid "54d3d139-363b-5eb0-be37-b646e715a4ce"))
+	(wire (pts (xy 137.16 106.68) (xy 137.16 116.84)) (stroke (width 0) (type default)) (uuid "8614b48e-e320-573e-8d8e-cac2cd30ca3f"))
+	(wire (pts (xy 137.16 116.84) (xy 172.72 116.84)) (stroke (width 0) (type default)) (uuid "fb87e285-3c31-5e84-9197-173edd27245f"))
+	(symbol (lib_id "Device:R") (at 176.53 81.28 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "51c06c6e-647a-5c46-8eeb-337f9049dbf9")
+		(property "Reference" "R3" (at 178.44 79.38 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 81.28 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "96687f45-b108-57ac-9cf1-c92e2203e1df"))
+		(pin "2" (uuid "ac666aa0-d446-502a-a803-5ecbc8945ff8"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R3") (unit 1))))
+	)
+	(wire (pts (xy 180.34 81.28) (xy 190.50 81.28)) (stroke (width 0) (type default)) (uuid "8eefc3b8-2995-5c7b-aad5-c644bb4c182a"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 81.28 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "124c1085-9619-5ea2-b783-cefb81b4c9b0")
+		(property "Reference" "E1" (at 191.77 78.74 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E01" (at 191.77 77.98 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "05a7eaf3-d594-5e4e-812f-7fff583ed1cd"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E1") (unit 1))))
+	)
+	(label "U1_PA4" (at 166.72 81.28 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "362ff31c-0b9b-5b5c-b8ea-7e3156a386ec"))
+	(label "E01" (at 181.64 81.28 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3605a0d9-3d19-583f-aae2-e1523d9ae01a"))
+	(symbol (lib_id "Device:R") (at 176.53 86.36 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c2a3d056-6e9d-513a-aae3-530ea384dc4c")
+		(property "Reference" "R4" (at 178.44 84.46 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 86.36 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 86.36 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "e163cb45-b7ac-554e-a3fd-3d36f82ecc03"))
+		(pin "2" (uuid "b7a3332f-218f-545b-8528-5f2d44557748"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R4") (unit 1))))
+	)
+	(wire (pts (xy 180.34 86.36) (xy 190.50 86.36)) (stroke (width 0) (type default)) (uuid "51c49ebc-8a62-5a9e-a658-9e323bf1756c"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 86.36 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "3c238f54-aaaa-5792-a809-a0072ecd498d")
+		(property "Reference" "E2" (at 191.77 83.82 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E02" (at 191.77 83.06 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 86.36 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b032f4a1-12eb-590c-a8a2-b9aa722e0ecf"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E2") (unit 1))))
+	)
+	(label "U1_PA5" (at 166.72 86.36 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c820a577-a497-5fdc-be89-c6f498ec58ca"))
+	(label "E02" (at 181.64 86.36 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "84b8271a-8c44-505c-abfd-6b138988d503"))
+	(symbol (lib_id "Device:R") (at 176.53 91.44 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b517f12e-2adb-5cb8-9968-61505e07121a")
+		(property "Reference" "R5" (at 178.44 89.54 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 91.44 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 91.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "36a6fa3f-fe03-5c33-8833-8bd6f9c386f2"))
+		(pin "2" (uuid "b54b7ffb-df5f-5c45-b014-3c551c6c916f"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R5") (unit 1))))
+	)
+	(wire (pts (xy 180.34 91.44) (xy 190.50 91.44)) (stroke (width 0) (type default)) (uuid "92c38058-123c-5a9f-8cd1-1ff23d8d8dfa"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 91.44 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "18edbf3d-d3a4-534f-9c2c-b31afe35d9c4")
+		(property "Reference" "E3" (at 191.77 88.90 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E03" (at 191.77 88.14 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 91.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "adf58287-82e0-5a7c-848a-28f0ff15e7b7"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E3") (unit 1))))
+	)
+	(label "U1_PA6" (at 166.72 91.44 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "21b24bd9-7fa5-5434-a21c-f3027497e548"))
+	(label "E03" (at 181.64 91.44 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "fe2a46c8-4b94-595b-a3aa-924f722bd274"))
+	(symbol (lib_id "Device:R") (at 176.53 96.52 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "87cf84ff-7054-51c8-8a6b-f0552e836125")
+		(property "Reference" "R6" (at 178.44 94.62 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 96.52 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9e34cfa0-67c1-57f9-9317-94ed3a520f85"))
+		(pin "2" (uuid "4d9ceb61-365e-58cb-8789-267ba36e4c4a"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R6") (unit 1))))
+	)
+	(wire (pts (xy 180.34 96.52) (xy 190.50 96.52)) (stroke (width 0) (type default)) (uuid "c4ecc7ed-84f0-5922-aefe-b64c22592a61"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 96.52 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "d0bedc27-365c-564c-b496-ab783f76c577")
+		(property "Reference" "E4" (at 191.77 93.98 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E04" (at 191.77 93.22 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d960c3bb-44a0-5799-811b-6fcda7b4332f"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E4") (unit 1))))
+	)
+	(label "U1_PA7" (at 166.72 96.52 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "653e6c27-0e1a-5ab9-a3d8-744bba37fbab"))
+	(label "E04" (at 181.64 96.52 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c29478cb-9395-5da6-955f-801af777b6ec"))
+	(symbol (lib_id "Device:R") (at 176.53 101.60 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "45c124c0-e4ef-5cf0-9282-c8bb4025beb9")
+		(property "Reference" "R10" (at 178.44 99.70 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 101.60 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "05bb2a67-bba3-5e0c-8007-73a1597a4a4c"))
+		(pin "2" (uuid "0c1c461a-a869-5812-ac80-ed056d9425c8"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R10") (unit 1))))
+	)
+	(wire (pts (xy 180.34 101.60) (xy 190.50 101.60)) (stroke (width 0) (type default)) (uuid "4a5748e7-739f-5b7d-8195-77699ee1aa63"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 101.60 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "68c59887-fd87-58ae-b67a-b5ec29ab0416")
+		(property "Reference" "E8" (at 191.77 99.06 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E08" (at 191.77 98.30 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b8e9ebf8-3dd5-564b-9015-0e16d1396f09"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E8") (unit 1))))
+	)
+	(label "U1_PB0" (at 166.72 101.60 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e5623bdc-0a31-54e3-85d1-8f3ee9411237"))
+	(label "E08" (at 181.64 101.60 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2ce3b902-c2e6-5b70-a5ed-afd6b88ec61e"))
+	(symbol (lib_id "Device:R") (at 176.53 106.68 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "75721761-7ccb-5c98-bab9-7c98efda96dd")
+		(property "Reference" "R9" (at 178.44 104.78 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 106.68 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "bf3155a2-7255-5574-b20f-e5a93fbdb300"))
+		(pin "2" (uuid "35f35023-e4f6-527f-8394-407f323ea105"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R9") (unit 1))))
+	)
+	(wire (pts (xy 180.34 106.68) (xy 190.50 106.68)) (stroke (width 0) (type default)) (uuid "72f6ed71-48af-52c6-bb93-3e0b0b7f7ef1"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 106.68 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "5b07f28b-d4ed-5046-8f7c-24c26b4aca93")
+		(property "Reference" "E7" (at 191.77 104.14 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E07" (at 191.77 103.38 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "2a5e07e2-0922-5fe8-9d9f-876587843b3a"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E7") (unit 1))))
+	)
+	(label "U1_PB1" (at 166.72 106.68 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3813360d-f0a2-558d-ae73-31b3a50ae26b"))
+	(label "E07" (at 181.64 106.68 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b4255450-85c5-5785-b19c-5a2f035efcae"))
+	(symbol (lib_id "Device:R") (at 176.53 111.76 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7543edc6-7370-527b-9cd5-b89397061436")
+		(property "Reference" "R8" (at 178.44 109.86 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 111.76 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 111.76 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c4f6f445-6303-54e8-a2bd-42c6621b570b"))
+		(pin "2" (uuid "3a9fd6cc-a451-54f4-adab-c3c2037749c8"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R8") (unit 1))))
+	)
+	(wire (pts (xy 180.34 111.76) (xy 190.50 111.76)) (stroke (width 0) (type default)) (uuid "13d7bac4-6db2-5988-9b7e-69573fdbf723"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 111.76 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "44352bdd-9cf0-5e83-84e0-4c015b505b9d")
+		(property "Reference" "E6" (at 191.77 109.22 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E06" (at 191.77 108.46 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 111.76 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "dabbc950-f304-57f5-848b-804644ffe254"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E6") (unit 1))))
+	)
+	(label "U1_PB4" (at 166.72 111.76 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f208aba7-c695-5f67-92e5-a8bdf4ac85c9"))
+	(label "E06" (at 181.64 111.76 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7dbe5875-913d-5206-ade0-b976b4736b9d"))
+	(symbol (lib_id "Device:R") (at 176.53 116.84 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7ea12cf2-8c9d-5fcd-9b31-fb12914016d9")
+		(property "Reference" "R7" (at 178.44 114.94 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 116.84 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9847ef4c-d7de-5db0-8488-02156142402f"))
+		(pin "2" (uuid "1451b010-65e8-51d7-ab25-bb3f34bc4a25"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R7") (unit 1))))
+	)
+	(wire (pts (xy 180.34 116.84) (xy 190.50 116.84)) (stroke (width 0) (type default)) (uuid "27d3541c-a876-52ba-8d88-e98682cdbe9d"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 116.84 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "d33c0ac4-b87d-51b6-af72-47e47900e822")
+		(property "Reference" "E5" (at 191.77 114.30 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E05" (at 191.77 113.54 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "8a51989c-dd20-52a5-83ed-503ab6bf32cd"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E5") (unit 1))))
+	)
+	(label "U1_PB5" (at 166.72 116.84 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "bc17607d-350d-58fc-9dd1-5a89445b5a42"))
+	(label "E05" (at 181.64 116.84 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b6c0a5e9-4e11-556e-ac56-076fbb620e1f"))
+	(wire (pts (xy 104.14 93.98) (xy 66.04 93.98)) (stroke (width 0) (type default)) (uuid "960d1880-2c95-5f49-bcea-65099cb2c307"))
+	(wire (pts (xy 104.14 96.52) (xy 96.52 96.52)) (stroke (width 0) (type default)) (uuid "3778ff40-be35-5b49-9fd1-e145e228bf32"))
+	(wire (pts (xy 96.52 96.52) (xy 96.52 99.06)) (stroke (width 0) (type default)) (uuid "5ca0a632-cb55-5e4d-b06a-35675a056afa"))
+	(wire (pts (xy 96.52 99.06) (xy 66.04 99.06)) (stroke (width 0) (type default)) (uuid "51d4841c-696c-5f34-b96b-04fad79de514"))
+	(wire (pts (xy 104.14 99.06) (xy 99.06 99.06)) (stroke (width 0) (type default)) (uuid "0a7d7db9-9df8-5a18-88d3-321f5927ba25"))
+	(wire (pts (xy 99.06 99.06) (xy 99.06 104.14)) (stroke (width 0) (type default)) (uuid "d359be4a-5a17-5e41-87f8-748858f186cb"))
+	(wire (pts (xy 99.06 104.14) (xy 66.04 104.14)) (stroke (width 0) (type default)) (uuid "b8bee2e1-0aa9-5e10-8b20-01f08e95e991"))
+	(wire (pts (xy 104.14 101.60) (xy 101.60 101.60)) (stroke (width 0) (type default)) (uuid "3a2f5796-05ad-5450-bb51-b0800dd8ccee"))
+	(wire (pts (xy 101.60 101.60) (xy 101.60 109.22)) (stroke (width 0) (type default)) (uuid "817452f4-72a5-5842-9d3f-6eaf2c030bb9"))
+	(wire (pts (xy 101.60 109.22) (xy 66.04 109.22)) (stroke (width 0) (type default)) (uuid "3712e3eb-55ee-54e4-ac5f-3b67840d67e4"))
+	(symbol (lib_id "Device:R") (at 62.23 93.98 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "bf97009f-a139-5865-8487-9a9cc131d842")
+		(property "Reference" "R11" (at 56.52 92.08 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 62.23 93.98 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 62.23 93.98 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c00a7cb9-7804-5d2c-b43b-8250eb5f4462"))
+		(pin "2" (uuid "1dd98815-8063-50f6-ab2f-7efb8c10f28d"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R11") (unit 1))))
+	)
+	(wire (pts (xy 58.42 93.98) (xy 48.26 93.98)) (stroke (width 0) (type default)) (uuid "89d0ffbd-f33b-5cf5-ab32-12baa7fdaa3d"))
+	(symbol (lib_id "Connector:TestPoint") (at 48.26 93.98 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "d05cafdd-b56e-5bad-a792-f77c934bbc7f")
+		(property "Reference" "E9" (at 49.53 91.44 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E09" (at 49.53 90.68 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 48.26 93.98 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "ca7b3dc6-f728-572d-ade5-ce99e78349b8"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E9") (unit 1))))
+	)
+	(label "U1_PC0" (at 66.64 93.98 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "793039c8-9c8a-533c-abbf-14e98a83b2c6"))
+	(label "E09" (at 48.86 93.98 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "bd2c24ce-8a7f-5726-b7da-a4c021bf005c"))
+	(symbol (lib_id "Device:R") (at 62.23 99.06 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3cb55324-88db-5696-988a-255fbdb45b4d")
+		(property "Reference" "R14" (at 56.52 97.16 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 62.23 99.06 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 62.23 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "3ab08d06-5182-5a0e-a31e-1e09a362c0d9"))
+		(pin "2" (uuid "60431ea3-5989-5862-8b5d-127677c0f61a"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R14") (unit 1))))
+	)
+	(wire (pts (xy 58.42 99.06) (xy 48.26 99.06)) (stroke (width 0) (type default)) (uuid "2665a27a-3327-5ce8-b8ce-c0f8061e753c"))
+	(symbol (lib_id "Connector:TestPoint") (at 48.26 99.06 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "4d5d52af-3dc5-58d2-95e1-a9a20eb59c51")
+		(property "Reference" "E12" (at 49.53 96.52 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E12" (at 49.53 95.76 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 48.26 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "8ca9c65b-bfc2-5b1c-a1c1-3ddf043dc994"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E12") (unit 1))))
+	)
+	(label "U1_PC1" (at 66.64 99.06 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5a702165-2e19-550e-b244-8357532889ef"))
+	(label "E12" (at 48.86 99.06 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "883ed99c-adbf-5919-85b3-aacec639b1d2"))
+	(symbol (lib_id "Device:R") (at 62.23 104.14 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "88627232-c868-5083-bc02-3898908be18d")
+		(property "Reference" "R13" (at 56.52 102.24 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 62.23 104.14 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 62.23 104.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "94d3ba68-b271-549e-afe4-15e3969a8cbd"))
+		(pin "2" (uuid "ccd7d3cc-2d06-558c-aecb-97859acfdced"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R13") (unit 1))))
+	)
+	(wire (pts (xy 58.42 104.14) (xy 48.26 104.14)) (stroke (width 0) (type default)) (uuid "f5d1cb26-12f4-598c-af11-18c938fd9c3a"))
+	(symbol (lib_id "Connector:TestPoint") (at 48.26 104.14 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "51a137aa-79f2-5cbd-8ddd-3e352cbffa93")
+		(property "Reference" "E11" (at 49.53 101.60 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E11" (at 49.53 100.84 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 48.26 104.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "460ec8d8-db19-5b13-89dc-4ffabe63aa51"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E11") (unit 1))))
+	)
+	(label "U1_PC2" (at 66.64 104.14 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "13c0dd50-e70e-577f-a241-3ea0e0704c03"))
+	(label "E11" (at 48.86 104.14 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0f08d1e6-3105-5322-9877-697d84fbb20c"))
+	(symbol (lib_id "Device:R") (at 62.23 109.22 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70ca9abb-1ea7-50f1-b4f1-0e4d75160d1e")
+		(property "Reference" "R12" (at 56.52 107.32 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 62.23 109.22 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 62.23 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "791ca3d2-28e6-51e6-b30c-915171a008cb"))
+		(pin "2" (uuid "03ae2480-6e29-51a4-a78c-9c962ab88683"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R12") (unit 1))))
+	)
+	(wire (pts (xy 58.42 109.22) (xy 48.26 109.22)) (stroke (width 0) (type default)) (uuid "c0f7d19b-0892-51df-9245-b9ec87eaa49e"))
+	(symbol (lib_id "Connector:TestPoint") (at 48.26 109.22 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "962f53a2-ba3f-55b4-bbf7-a3f3226d3ade")
+		(property "Reference" "E10" (at 49.53 106.68 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E10" (at 49.53 105.92 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 48.26 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b6c6b0cd-8936-5ad0-a8bd-953efce5e719"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E10") (unit 1))))
+	)
+	(label "U1_PC3" (at 66.64 109.22 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7fe29026-cef1-5716-a298-136ea04d667c"))
+	(label "E10" (at 48.86 109.22 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3de37e09-8f96-5271-bc5e-d96744321a1a"))
+	(wire (pts (xy 134.62 187.96) (xy 172.72 187.96)) (stroke (width 0) (type default)) (uuid "e2610bbd-289b-5c23-9022-089b23585190"))
+	(wire (pts (xy 134.62 190.50) (xy 152.40 190.50)) (stroke (width 0) (type default)) (uuid "17262859-d37f-55f6-9d05-6b2a48530169"))
+	(wire (pts (xy 152.40 190.50) (xy 152.40 193.04)) (stroke (width 0) (type default)) (uuid "a64e20fd-7d48-5768-8195-edbd0a3a0465"))
+	(wire (pts (xy 152.40 193.04) (xy 172.72 193.04)) (stroke (width 0) (type default)) (uuid "5c031c6a-77a5-5077-96b9-a0ad0d437e4d"))
+	(wire (pts (xy 134.62 193.04) (xy 149.86 193.04)) (stroke (width 0) (type default)) (uuid "dd3ad033-e88d-5901-8ae0-0a39e614fa29"))
+	(wire (pts (xy 149.86 193.04) (xy 149.86 198.12)) (stroke (width 0) (type default)) (uuid "7e0b641a-7468-5718-a280-98cf300fdb04"))
+	(wire (pts (xy 149.86 198.12) (xy 172.72 198.12)) (stroke (width 0) (type default)) (uuid "9a7df4cb-caeb-5c9f-8cd0-61e419c4f6ce"))
+	(wire (pts (xy 134.62 195.58) (xy 147.32 195.58)) (stroke (width 0) (type default)) (uuid "2e5c69f8-f70e-575d-b532-8c9b98e43ab1"))
+	(wire (pts (xy 147.32 195.58) (xy 147.32 203.20)) (stroke (width 0) (type default)) (uuid "d301990a-d993-5419-9d1a-74a78031ad4a"))
+	(wire (pts (xy 147.32 203.20) (xy 172.72 203.20)) (stroke (width 0) (type default)) (uuid "a9af0fcd-c0c7-5d47-8598-4c22c0b5e047"))
+	(wire (pts (xy 134.62 200.66) (xy 144.78 200.66)) (stroke (width 0) (type default)) (uuid "3d0284ec-3ae5-5602-9bc9-c5ca70ff82ee"))
+	(wire (pts (xy 144.78 200.66) (xy 144.78 208.28)) (stroke (width 0) (type default)) (uuid "b6d02f34-35fd-5b27-8a9c-d2dd312b1cb8"))
+	(wire (pts (xy 144.78 208.28) (xy 172.72 208.28)) (stroke (width 0) (type default)) (uuid "50da93eb-fe9c-58c2-98d7-aa15b23d88a3"))
+	(wire (pts (xy 134.62 203.20) (xy 142.24 203.20)) (stroke (width 0) (type default)) (uuid "2bf6eef0-b797-59f4-b35c-5b7a0c5b2634"))
+	(wire (pts (xy 142.24 203.20) (xy 142.24 213.36)) (stroke (width 0) (type default)) (uuid "ffd61f7c-f327-5013-84a8-2cd202079d4e"))
+	(wire (pts (xy 142.24 213.36) (xy 172.72 213.36)) (stroke (width 0) (type default)) (uuid "05729669-4ecd-5389-813b-25280e76e888"))
+	(wire (pts (xy 134.62 210.82) (xy 139.70 210.82)) (stroke (width 0) (type default)) (uuid "2e2125a3-4387-5cba-bdb2-b026afb030d9"))
+	(wire (pts (xy 139.70 210.82) (xy 139.70 218.44)) (stroke (width 0) (type default)) (uuid "b9ff2169-9916-56d6-bc3b-e8c717d0c961"))
+	(wire (pts (xy 139.70 218.44) (xy 172.72 218.44)) (stroke (width 0) (type default)) (uuid "0cbc1f96-ea4f-501c-9396-5112c2f7980b"))
+	(wire (pts (xy 134.62 213.36) (xy 137.16 213.36)) (stroke (width 0) (type default)) (uuid "8f0fa625-7a9a-5f7d-b50f-89ac19f53912"))
+	(wire (pts (xy 137.16 213.36) (xy 137.16 223.52)) (stroke (width 0) (type default)) (uuid "b982b5ab-7d37-5c04-8767-0af06ec4f075"))
+	(wire (pts (xy 137.16 223.52) (xy 172.72 223.52)) (stroke (width 0) (type default)) (uuid "ac8fd1bf-6b55-5776-bb4c-7ddf001f1626"))
+	(symbol (lib_id "Device:R") (at 176.53 187.96 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5d2b7b99-574a-59ce-90a5-ce99e29fc206")
+		(property "Reference" "R15" (at 178.44 186.06 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 187.96 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "deef9600-bcb3-53b9-b580-e69dd66599fa"))
+		(pin "2" (uuid "61a6375d-eb9a-5818-9590-f63917d152ff"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R15") (unit 1))))
+	)
+	(wire (pts (xy 180.34 187.96) (xy 190.50 187.96)) (stroke (width 0) (type default)) (uuid "63ac312d-b4cb-54a6-93d6-a16e3aff617e"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 187.96 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "57993400-fab7-51e2-b05c-4b217bbb07f6")
+		(property "Reference" "E13" (at 191.77 185.42 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E13" (at 191.77 184.66 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "32dee41d-b40c-53cd-8086-78200e25ad65"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E13") (unit 1))))
+	)
+	(label "U2_PA4" (at 166.72 187.96 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1a5a2a5a-8bca-59d0-877c-734d7c554a6b"))
+	(label "E13" (at 181.64 187.96 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "32b6ddc3-730b-53e2-9b69-93f267afe7af"))
+	(symbol (lib_id "Device:R") (at 176.53 193.04 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "de49bf3e-295d-5b34-9e9f-e0dab57a4731")
+		(property "Reference" "R16" (at 178.44 191.14 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 193.04 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 193.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "63a82076-2768-5a43-b068-e624f8ff1f3d"))
+		(pin "2" (uuid "b0b25ff2-311a-584e-b3aa-d4f860bb3d9a"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R16") (unit 1))))
+	)
+	(wire (pts (xy 180.34 193.04) (xy 190.50 193.04)) (stroke (width 0) (type default)) (uuid "7305331b-1dfb-50ff-a819-6bcc5afe1095"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 193.04 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "8ab2073a-2866-5087-88bf-c89272068ddd")
+		(property "Reference" "E14" (at 191.77 190.50 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E14" (at 191.77 189.74 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 193.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "34c1c272-d387-5dda-80df-6c328234d784"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E14") (unit 1))))
+	)
+	(label "U2_PA5" (at 166.72 193.04 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f31dce10-5fbb-57b6-be03-73994be3cf3c"))
+	(label "E14" (at 181.64 193.04 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4f1e6c03-a7d1-5427-861d-b30a58266c49"))
+	(symbol (lib_id "Device:R") (at 176.53 198.12 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f88daa9a-970a-584a-a8c6-50465ceaefb5")
+		(property "Reference" "R17" (at 178.44 196.22 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 198.12 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9720a027-ff06-522a-9a0f-8f449f446d73"))
+		(pin "2" (uuid "a144e29d-d98f-5e11-9dc0-cb7ee8a28c19"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R17") (unit 1))))
+	)
+	(wire (pts (xy 180.34 198.12) (xy 190.50 198.12)) (stroke (width 0) (type default)) (uuid "64c5f6f1-1358-5511-9235-3ed426ecd57e"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 198.12 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "e1544b12-567e-5786-8729-cd4ea0fc53ca")
+		(property "Reference" "E15" (at 191.77 195.58 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E15" (at 191.77 194.82 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "bd1738a8-9ad0-527b-b094-a69c597ff1b5"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E15") (unit 1))))
+	)
+	(label "U2_PA6" (at 166.72 198.12 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "fa70c28e-661a-5f2b-903c-f75dd6245d82"))
+	(label "E15" (at 181.64 198.12 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a7eb4669-59f0-5472-ad64-926dee6b3ae9"))
+	(symbol (lib_id "Device:R") (at 176.53 203.20 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "91614d2b-38da-5a36-ac99-ae45d5f053e3")
+		(property "Reference" "R18" (at 178.44 201.30 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 203.20 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 203.20 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9329435a-789d-59d7-bcc5-b2e302dbf7c2"))
+		(pin "2" (uuid "608e2878-01e7-52fe-a8ce-c50533c980cf"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R18") (unit 1))))
+	)
+	(wire (pts (xy 180.34 203.20) (xy 190.50 203.20)) (stroke (width 0) (type default)) (uuid "dca5a4ec-7d76-5be6-be8b-e212266ba8ac"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 203.20 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "1fe17468-1b81-5a7a-b282-3cb1a30b1ca0")
+		(property "Reference" "E16" (at 191.77 200.66 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E16" (at 191.77 199.90 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 203.20 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d9bef578-01fb-50cb-8068-ab2f1caed93f"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E16") (unit 1))))
+	)
+	(label "U2_PA7" (at 166.72 203.20 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ea4e9cf3-f127-520b-8fbb-5dd97f7a3824"))
+	(label "E16" (at 181.64 203.20 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "fc668658-72e2-589f-8934-5c36352f7bb1"))
+	(symbol (lib_id "Device:R") (at 176.53 208.28 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "34bd3b4a-d04e-5b0c-ba66-1c4eb13d255b")
+		(property "Reference" "R22" (at 178.44 206.38 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 208.28 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 208.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "cedbfc1a-6d0a-5338-86e5-8bd64b7bee89"))
+		(pin "2" (uuid "7c79a8b0-ef87-5953-b875-7cbcf3934771"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R22") (unit 1))))
+	)
+	(wire (pts (xy 180.34 208.28) (xy 190.50 208.28)) (stroke (width 0) (type default)) (uuid "35b8a423-0f30-5278-8bfb-e93939c8bc4b"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 208.28 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "ae2c5982-2bbc-5de2-a5ca-f718941cb774")
+		(property "Reference" "E20" (at 191.77 205.74 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E20" (at 191.77 204.98 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 208.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "e5bd9b53-f6cb-5c26-bac7-c342563eef80"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E20") (unit 1))))
+	)
+	(label "U2_PB0" (at 166.72 208.28 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "241ff8d0-10e4-593b-b29e-5cfe921ce304"))
+	(label "E20" (at 181.64 208.28 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f34cec5e-f35d-5139-b514-454836685fb4"))
+	(symbol (lib_id "Device:R") (at 176.53 213.36 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "268a39ca-e402-5b99-ab70-c8c1db928f0e")
+		(property "Reference" "R21" (at 178.44 211.46 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 213.36 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 213.36 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5ec8c7f6-76f2-5a4d-aec0-865473247995"))
+		(pin "2" (uuid "3f25f928-db76-5321-9a30-b4c3efbb17cb"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R21") (unit 1))))
+	)
+	(wire (pts (xy 180.34 213.36) (xy 190.50 213.36)) (stroke (width 0) (type default)) (uuid "c6275e4d-a86b-5df7-a83b-816b3b1d802f"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 213.36 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "1ffb2285-f6a9-5e5c-828c-b0161f89a382")
+		(property "Reference" "E19" (at 191.77 210.82 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E19" (at 191.77 210.06 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 213.36 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "6389a369-a504-578f-b38d-d35c469daf56"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E19") (unit 1))))
+	)
+	(label "U2_PB1" (at 166.72 213.36 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a5c7d3cb-fa87-58ff-842c-d60e5cd4981c"))
+	(label "E19" (at 181.64 213.36 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "af72dd65-e5be-534d-af0f-dd34b646b1c6"))
+	(symbol (lib_id "Device:R") (at 176.53 218.44 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d8ed9cb3-5f6c-5cc7-b4a0-2b8cd3e18e97")
+		(property "Reference" "R20" (at 178.44 216.54 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 218.44 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 218.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b8b5eedb-a55f-5b6d-a0c3-3dd40ba69bd9"))
+		(pin "2" (uuid "cc95fcf9-147c-5d79-84aa-6c403edea361"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R20") (unit 1))))
+	)
+	(wire (pts (xy 180.34 218.44) (xy 190.50 218.44)) (stroke (width 0) (type default)) (uuid "752e0fd1-1713-5917-9306-47eb14527162"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 218.44 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "86a2c153-73c0-5e80-a30b-d27c9f45fbc0")
+		(property "Reference" "E18" (at 191.77 215.90 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E18" (at 191.77 215.14 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 218.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "3fca16ec-8dd9-5126-a0eb-cdeb1ba491d2"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E18") (unit 1))))
+	)
+	(label "U2_PB4" (at 166.72 218.44 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "266fa650-d47a-5469-a2c3-5caf9f5ed00f"))
+	(label "E18" (at 181.64 218.44 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8a7d2b78-c956-5b1a-b6df-c1c0032dac51"))
+	(symbol (lib_id "Device:R") (at 176.53 223.52 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "efc83130-5310-5e67-b7dc-d3cafc618250")
+		(property "Reference" "R19" (at 178.44 221.62 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 176.53 223.52 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 176.53 223.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "874d9b53-935e-571c-a7a7-06ce2b03ae47"))
+		(pin "2" (uuid "0cc19247-5409-5322-8a3a-9b6f9a3977a0"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R19") (unit 1))))
+	)
+	(wire (pts (xy 180.34 223.52) (xy 190.50 223.52)) (stroke (width 0) (type default)) (uuid "b0a3e185-1145-514c-8332-949a7fcd6380"))
+	(symbol (lib_id "Connector:TestPoint") (at 190.50 223.52 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "8dd165b4-b9df-557e-8dfd-9e88296efa41")
+		(property "Reference" "E17" (at 191.77 220.98 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E17" (at 191.77 220.22 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 190.50 223.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "685fa926-fa67-56e9-8990-b5d7a0bec742"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E17") (unit 1))))
+	)
+	(label "U2_PB5" (at 166.72 223.52 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4ac44f1c-1a8f-5266-96a3-c41dd3aef5a7"))
+	(label "E17" (at 181.64 223.52 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ee1bd361-ed37-51dc-a14e-63ed5cbad672"))
+	(wire (pts (xy 104.14 200.66) (xy 66.04 200.66)) (stroke (width 0) (type default)) (uuid "2afd9002-622e-5af1-a7db-0f65d48749a3"))
+	(wire (pts (xy 104.14 203.20) (xy 96.52 203.20)) (stroke (width 0) (type default)) (uuid "67a92dbf-baad-5095-a15f-6d9208f97f07"))
+	(wire (pts (xy 96.52 203.20) (xy 96.52 205.74)) (stroke (width 0) (type default)) (uuid "9b34a8b6-7377-5d62-a277-af234ad25aea"))
+	(wire (pts (xy 96.52 205.74) (xy 66.04 205.74)) (stroke (width 0) (type default)) (uuid "9074f573-9e7e-5cfd-9e75-52770662e425"))
+	(wire (pts (xy 104.14 205.74) (xy 99.06 205.74)) (stroke (width 0) (type default)) (uuid "62ad4a0a-6407-5cb5-9191-14023189ae9e"))
+	(wire (pts (xy 99.06 205.74) (xy 99.06 210.82)) (stroke (width 0) (type default)) (uuid "0a7c2b9b-717f-5bfa-bccb-7c2727f71ff5"))
+	(wire (pts (xy 99.06 210.82) (xy 66.04 210.82)) (stroke (width 0) (type default)) (uuid "06e4d40e-aa4f-5863-bcdd-0ba6fb614853"))
+	(wire (pts (xy 104.14 208.28) (xy 101.60 208.28)) (stroke (width 0) (type default)) (uuid "b9c36266-43ab-5a40-b4e3-c4fe29c0764a"))
+	(wire (pts (xy 101.60 208.28) (xy 101.60 215.90)) (stroke (width 0) (type default)) (uuid "d205e000-de4e-577e-9786-c4861b9ca3d3"))
+	(wire (pts (xy 101.60 215.90) (xy 66.04 215.90)) (stroke (width 0) (type default)) (uuid "9da0cd98-c603-57b6-aa03-dc2f5a695d07"))
+	(symbol (lib_id "Device:R") (at 62.23 200.66 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c89fe97d-84c4-5fd9-a004-be99e113d5ae")
+		(property "Reference" "R23" (at 56.52 198.76 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 62.23 200.66 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 62.23 200.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "47e71eb6-56d6-50ff-ae18-90df5b4a4983"))
+		(pin "2" (uuid "fde5e9e3-3eb2-5ef3-afe2-0b3ff1183680"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R23") (unit 1))))
+	)
+	(wire (pts (xy 58.42 200.66) (xy 48.26 200.66)) (stroke (width 0) (type default)) (uuid "ca0c5d1b-c13e-56f9-aab3-1b5d50f4157f"))
+	(symbol (lib_id "Connector:TestPoint") (at 48.26 200.66 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "b0152fec-f06b-52be-8ff1-01e80e141701")
+		(property "Reference" "E21" (at 49.53 198.12 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E21" (at 49.53 197.36 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 48.26 200.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d98d8034-e8fc-5e00-8620-1221304d71f9"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E21") (unit 1))))
+	)
+	(label "U2_PC0" (at 66.64 200.66 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "eb80d9cc-137e-5be9-a76d-9afabf82a54c"))
+	(label "E21" (at 48.86 200.66 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "570f2f7e-d816-5a46-9163-46da90070a33"))
+	(symbol (lib_id "Device:R") (at 62.23 205.74 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e0270906-59e6-5569-8fe1-85ed605a8b1a")
+		(property "Reference" "R26" (at 56.52 203.84 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 62.23 205.74 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 62.23 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "e0c70bf0-7b86-5b14-8b19-310944c05114"))
+		(pin "2" (uuid "e61ea752-9275-55dd-9392-e3cd52f56638"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R26") (unit 1))))
+	)
+	(wire (pts (xy 58.42 205.74) (xy 48.26 205.74)) (stroke (width 0) (type default)) (uuid "3a83347f-ff80-59dd-8fc9-759297475ea9"))
+	(symbol (lib_id "Connector:TestPoint") (at 48.26 205.74 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "ab607f26-2b5d-5155-9523-468047be53ba")
+		(property "Reference" "E24" (at 49.53 203.20 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E24" (at 49.53 202.44 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 48.26 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "7ef5416a-1410-56d1-8bc9-e8e77a8c5d23"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E24") (unit 1))))
+	)
+	(label "U2_PC1" (at 66.64 205.74 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "94819816-1092-5a1d-9738-f1c0c45fa49e"))
+	(label "E24" (at 48.86 205.74 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "16f04d7a-970f-5245-872b-7420be83ca9b"))
+	(symbol (lib_id "Device:R") (at 62.23 210.82 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0c37cf68-af80-56b2-b6ea-4e365a931614")
+		(property "Reference" "R25" (at 56.52 208.92 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 62.23 210.82 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 62.23 210.82 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c2247012-b81c-5e7f-a4b5-77399135a761"))
+		(pin "2" (uuid "4d4ebfa4-bfc3-51cb-9aef-6cd7898587f6"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R25") (unit 1))))
+	)
+	(wire (pts (xy 58.42 210.82) (xy 48.26 210.82)) (stroke (width 0) (type default)) (uuid "a208e48c-0150-5c5a-854f-57ac440a4796"))
+	(symbol (lib_id "Connector:TestPoint") (at 48.26 210.82 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "b9b70068-d0de-5dac-89f0-efd17cfa8e1e")
+		(property "Reference" "E23" (at 49.53 208.28 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E23" (at 49.53 207.52 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 48.26 210.82 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "a80430a7-6faa-5491-939b-13c73977e113"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E23") (unit 1))))
+	)
+	(label "U2_PC2" (at 66.64 210.82 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d8099641-bc14-5c06-9b9b-5b19cea8a255"))
+	(label "E23" (at 48.86 210.82 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c001b838-e1d0-58bb-a877-540d7f886418"))
+	(symbol (lib_id "Device:R") (at 62.23 215.90 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5c69fa68-57eb-52be-aceb-cb63f4d8ca23")
+		(property "Reference" "R24" (at 56.52 214.00 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "1k" (at 62.23 215.90 90) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 62.23 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d7208e3a-c0e0-5775-abc2-fceee4ccfe46"))
+		(pin "2" (uuid "a9ebf767-a2eb-52da-bb07-62e6407bfdac"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R24") (unit 1))))
+	)
+	(wire (pts (xy 58.42 215.90) (xy 48.26 215.90)) (stroke (width 0) (type default)) (uuid "c8a7cb06-b1d8-5018-b33b-f2bedfa13e28"))
+	(symbol (lib_id "Connector:TestPoint") (at 48.26 215.90 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "bffcb32a-dfe8-5030-b605-197e5fd029ff")
+		(property "Reference" "E22" (at 49.53 213.36 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "E22" (at 49.53 212.60 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Footprint" "ssi:electrode" (at 48.26 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "ab3037a0-3f7b-5fcb-86bf-b69ec0408839"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "E22") (unit 1))))
+	)
+	(label "U2_PC3" (at 66.64 215.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2c356921-8755-5eab-82fa-f51a28fa14bf"))
+	(label "E22" (at 48.86 215.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "37565940-69b8-570c-86e1-3ff68beecdf8"))
+	(wire (pts (xy 134.62 76.20) (xy 309.88 76.20)) (stroke (width 0) (type default)) (uuid "2bb1c6eb-17a9-54cd-ae8a-7956a020d7c4"))
+	(wire (pts (xy 134.62 73.66) (xy 314.96 73.66)) (stroke (width 0) (type default)) (uuid "a0a8e06d-4673-54fb-a546-b9fd0b99a5a4"))
+	(wire (pts (xy 134.62 71.12) (xy 320.04 71.12)) (stroke (width 0) (type default)) (uuid "2152e7dd-bbd7-5245-9a22-dc09f1c8fe6f"))
+	(wire (pts (xy 134.62 182.88) (xy 309.88 182.88)) (stroke (width 0) (type default)) (uuid "1e2142f4-ab6e-5888-aabe-0729d1a9ccce"))
+	(wire (pts (xy 134.62 180.34) (xy 314.96 180.34)) (stroke (width 0) (type default)) (uuid "9018afb2-a836-5343-9664-a558e93b9095"))
+	(wire (pts (xy 134.62 177.80) (xy 335.28 177.80)) (stroke (width 0) (type default)) (uuid "fffc33a3-2ad8-5412-b204-f381d1d57c8c"))
+	(label "SCL" (at 137.16 76.20 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9f86dfa9-7126-56b1-9841-646e5053ffd1"))
+	(label "SDA" (at 137.16 73.66 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c34b649e-8349-545a-b764-289b886e5c10"))
+	(label "UPDI_U1" (at 137.16 71.12 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "58196b3b-5caf-5a99-bbe5-ef570568e5e5"))
+	(label "SCL" (at 137.16 182.88 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e29f9eab-49fd-51ed-92bb-aea5f647203f"))
+	(label "SDA" (at 137.16 180.34 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5caf92b8-b024-5fa6-b99e-5c0572715d1f"))
+	(label "UPDI_U2" (at 137.16 177.80 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "38b6020b-c419-59dc-8feb-8a6d0ba0cf6b"))
+	(symbol (lib_id "Connector_Generic:Conn_01x06") (at 350.52 45.72 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "d90c6072-3b9f-571d-8ca5-d8978db06435")
+		(property "Reference" "J1" (at 349.25 36.83 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "Anschluss" (at 349.25 57.15 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "ssi:holes_6" (at 350.52 45.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c079d8df-5025-570d-af3f-3e35f08cbc46"))
+		(pin "2" (uuid "52a45ff1-b1eb-5d3f-984e-c33d0303f294"))
+		(pin "3" (uuid "b87b5a3f-07be-5465-b187-4a8c5038f6bf"))
+		(pin "4" (uuid "52e446d8-3a71-54e6-ac89-ec5c5d8dc608"))
+		(pin "5" (uuid "7dd94cee-883c-5d40-89fd-5e41e2373e38"))
+		(pin "6" (uuid "cc500d1c-c202-5f4c-95fa-a526e38a51ec"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "J1") (unit 1))))
+	)
+	(wire (pts (xy 345.44 40.64) (xy 342.90 40.64)) (stroke (width 0) (type default)) (uuid "f5ef8ec0-201f-5c2b-9491-e098aea8b984"))
+	(symbol (lib_id "power:GND") (at 342.90 40.64 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "087cd219-e4cc-5aab-b67e-f9362c7aea74")
+		(property "Reference" "#PWR013" (at 342.90 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "GND" (at 339.60 40.64 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "130c7102-b30d-57c5-b144-c6e48aa3b316"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR013") (unit 1))))
+	)
+	(wire (pts (xy 345.44 43.18) (xy 337.82 43.18)) (stroke (width 0) (type default)) (uuid "71e89493-c0dc-559c-8ff4-c03d0073104b"))
+	(symbol (lib_id "power:VCC") (at 337.82 43.18 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "edba0da3-7b82-5909-b504-1818ddcc1808")
+		(property "Reference" "#PWR014" (at 337.82 43.18 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "VCC" (at 334.52 43.18 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "8846b68f-4141-5536-a3a0-4d1a6edb62cd"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR014") (unit 1))))
+	)
+	(wire (pts (xy 345.44 45.72) (xy 309.88 45.72)) (stroke (width 0) (type default)) (uuid "8bcc6121-3f7e-5145-9228-a93943e15f15"))
+	(wire (pts (xy 309.88 45.72) (xy 309.88 76.20)) (stroke (width 0) (type default)) (uuid "dbc9efca-740c-59a5-bfbc-8966668a94b6"))
+	(wire (pts (xy 309.88 76.20) (xy 309.88 182.88)) (stroke (width 0) (type default)) (uuid "1ddca584-879f-5244-80ae-a60f684c4338"))
+	(wire (pts (xy 345.44 48.26) (xy 314.96 48.26)) (stroke (width 0) (type default)) (uuid "279f2c11-821f-5eda-9204-19b78878d9cc"))
+	(wire (pts (xy 314.96 48.26) (xy 314.96 73.66)) (stroke (width 0) (type default)) (uuid "9530aa69-3c2e-5a0a-a9e4-930dc9e875a1"))
+	(wire (pts (xy 314.96 73.66) (xy 314.96 180.34)) (stroke (width 0) (type default)) (uuid "e2c1598e-b7f8-57d7-9bdd-7e3833a0498e"))
+	(wire (pts (xy 345.44 50.80) (xy 320.04 50.80)) (stroke (width 0) (type default)) (uuid "d20408c9-1f44-5bbb-80c6-615e94b5784c"))
+	(wire (pts (xy 320.04 50.80) (xy 320.04 71.12)) (stroke (width 0) (type default)) (uuid "c25df29d-61c1-599b-a3c4-104adb2bc594"))
+	(wire (pts (xy 345.44 53.34) (xy 335.28 53.34)) (stroke (width 0) (type default)) (uuid "1c203918-c4fb-56cf-82e9-9ddb88c8430e"))
+	(wire (pts (xy 335.28 53.34) (xy 335.28 177.80)) (stroke (width 0) (type default)) (uuid "0a010726-fdc6-501b-a13e-e8947ebafbef"))
+	(junction (at 309.88 76.20) (diameter 0) (color 0 0 0 0) (uuid "5ee60e2d-a555-521f-b4bf-df87e6bdd220"))
+	(junction (at 314.96 73.66) (diameter 0) (color 0 0 0 0) (uuid "7b9dd49f-c77a-5ef6-8f04-9a1d95afe9e5"))
+	(symbol (lib_id "Device:R") (at 302.26 129.54 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "230996c8-1f09-58a1-aafb-1441ce0c8c3c")
+		(property "Reference" "R1" (at 300.99 127.00 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "4.7k" (at 300.99 133.35 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 302.26 129.54 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "be9bf6ab-02f7-5275-908b-ea023144890d"))
+		(pin "2" (uuid "f83728cb-87a0-5ee1-822f-d60e5911eec3"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R1") (unit 1))))
+	)
+	(wire (pts (xy 306.07 129.54) (xy 309.88 129.54)) (stroke (width 0) (type default)) (uuid "8dd59302-ab11-5712-a46e-7134f79fe70a"))
+	(junction (at 309.88 129.54) (diameter 0) (color 0 0 0 0) (uuid "4d8be5af-074d-572a-9677-aa96f8059c64"))
+	(symbol (lib_id "power:VCC") (at 298.45 129.54 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "00f37e82-6673-5630-ace9-23eb2fbb7e98")
+		(property "Reference" "#PWR015" (at 298.45 129.54 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "VCC" (at 295.15 129.54 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "13a6a9d2-6b11-5d1c-ab5e-2c9f84c6e42e"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR015") (unit 1))))
+	)
+	(symbol (lib_id "Device:R") (at 322.58 134.62 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f5f2b9eb-a0ab-5df9-8e17-54f3adf0b33d")
+		(property "Reference" "R2" (at 321.31 132.08 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "4.7k" (at 321.31 138.43 90) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 322.58 134.62 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5a5c6502-b20c-5687-81d5-f5a596c8a279"))
+		(pin "2" (uuid "5622c033-2095-58b2-a36b-28a7455f7efe"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "R2") (unit 1))))
+	)
+	(wire (pts (xy 318.77 134.62) (xy 314.96 134.62)) (stroke (width 0) (type default)) (uuid "a1cf7138-b97a-57b7-86ce-ab8214a86cc4"))
+	(junction (at 314.96 134.62) (diameter 0) (color 0 0 0 0) (uuid "1835d1e7-648c-5218-90f3-33976f3e7117"))
+	(symbol (lib_id "power:VCC") (at 326.39 134.62 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5940c9bf-8e38-540c-af95-9345da509268")
+		(property "Reference" "#PWR016" (at 326.39 134.62 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "VCC" (at 329.69 134.62 0) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "92d6ef74-7143-5882-812b-742b0b7dd8bf"))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "#PWR016") (unit 1))))
+	)
+	(no_connect (at 134.62 101.60) (uuid "a908ddbe-90fe-5a1e-8e1e-544ec8972af2"))
+	(no_connect (at 134.62 99.06) (uuid "f8612558-d7cc-5b63-9d9a-c8dc13f88452"))
+	(no_connect (at 134.62 208.28) (uuid "1aac787b-afd8-573d-8aa4-45bcf91cbd03"))
+	(no_connect (at 134.62 205.74) (uuid "14b3a167-e1f1-534e-b7f0-74f843324cfa"))
+	(symbol (lib_id "Mechanical:MountingHole") (at 30.48 254.00 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "806a5a78-8045-532c-979e-4cf5d890efd5")
+		(property "Reference" "MH1" (at 34.29 252.73 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "M2.5" (at 34.29 255.27 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5" (at 30.48 254.00 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(instances (project "sumpsense-24i" (path "/8a6575ee-1a96-569d-8ebd-13cdc074864e" (reference "MH1") (unit 1))))
+	)
+	(text "Zwei ATtiny1616 am I2C (Löcher J1). U1: 12 Stufen, Adresse 0x78 (PA3 an GND); U2: 12 Stufen, 0x77 (PA3 an VCC)." (exclude_from_sim no) (at 20.32 266.70 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e18e0b29-7fe8-5e96-92f8-1a68da3a0bab"))
+	(text "R3-R26 je 1k in Serie zu den Elektroden. E1 direkt hinter der Linie MAX, E24 an der Spitze." (exclude_from_sim no) (at 20.32 270.51 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d2358406-d704-5363-8bfe-f99776e4d2f7"))
+	(text "J1 = sechs Löcher im 2,54-mm-Raster: GND, VCC, SCL, SDA quer, UPDI U1 und U2 an der Seite (Flashen je Chip einzeln)." (exclude_from_sim no) (at 20.32 274.32 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "bc29fc7c-dddb-5a19-aac8-bf4acc71a159"))
+	(sheet_instances
+		(path "/" (page "1"))
+	)
+	(embedded_fonts no)
+)
