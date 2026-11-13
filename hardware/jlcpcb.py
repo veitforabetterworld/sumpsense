@@ -37,7 +37,6 @@ LCSC = {
     ("ESP32-H2", "QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm"): "C22470214",
     ("32MHz", "Crystal_SMD_3225-4Pin_3.2x2.5mm"): "C9009",
     ("1M", "R_0402_1005Metric"): "C25775",
-    ("SS14", "D_SMA"): "C2480",
 }
 # Kupfer-Footprints ohne Bauteil (Elektroden, Antenne, Pairing-Pads) gehören nicht in BOM/CPL.
 NO_PART = ("E", "A1", "JP1")
@@ -74,7 +73,11 @@ def export(board):
     shutil.rmtree(tmp, ignore_errors=True)
     os.makedirs(tmp, exist_ok=True)
     cli, _ = kicad_tools.kicad_commands()
-    subprocess.run(cli + ["pcb", "export", "gerbers", "--layers", LAYERS, "--subtract-soldermask",
+    layers = LAYERS
+    # 16z hat kein Silk auf der Unterseite (Skala liegt oben).
+    if board == "sumpsense-16z":
+        layers = LAYERS.replace("B.Silkscreen,", "")
+    subprocess.run(cli + ["pcb", "export", "gerbers", "--layers", layers, "--subtract-soldermask",
                     "--check-zones", "-o", tmp + os.sep, pcb], check=True, capture_output=True)
     subprocess.run(cli + ["pcb", "export", "drill", "--format", "excellon", "--excellon-units", "mm",
                     "--excellon-separate-th", "--generate-map", "--map-format", "gerberx2",

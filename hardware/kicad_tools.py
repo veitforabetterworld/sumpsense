@@ -160,10 +160,30 @@ def layout_svgs(pcb, preview, head_mm=52.0):
     write("kopf.svg", min(vw, head_mm * per_mm))
 
 
+def model_dir():
+    """Pfad zu den KiCad-STEP-Modellen. Ohne den findet der Render keine Bauteile."""
+    env = os.environ.get("KICAD10_3DMODEL_DIR")
+    candidates = [
+        env,
+        os.path.expanduser("~/.local/share/kicad/10.0/3dmodels"),
+        "/usr/share/kicad/3dmodels",
+    ]
+    for path in candidates:
+        if path and os.path.isdir(os.path.join(path, "Resistor_SMD.3dshapes")):
+            return path
+    return None
+
+
 def _render(pcb, args, out):
+    defines = []
+    models = model_dir()
+    if models:
+        defines = ["--define-var", f"KICAD10_3DMODEL_DIR={models}"]
+    else:
+        print("Hinweis: keine 3D-Modelle gefunden — Render ohne Bauteile.", file=sys.stderr)
     run_cli([
         "pcb", "render", "--quality", "high", "--background", "opaque",
-        *args, "-o", out, pcb,
+        *defines, *args, "-o", out, pcb,
     ])
     print(out)
 
