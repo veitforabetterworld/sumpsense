@@ -6,7 +6,7 @@
 #include "esp_rom_sys.h"
 
 const uint8_t SS_STAGE_GPIO[SS_STAGES] = {
-  25, 24, 23, 22, 14, 13, 12, 11, 10, 9, 8, 5, 4, 3, 2, 1
+  11, 12, 13, 14, 22, 23, 24, 25, 10, 9, 8, 5, 4, 3, 2, 1
 };
 
 #define HW            (&GPIO)
