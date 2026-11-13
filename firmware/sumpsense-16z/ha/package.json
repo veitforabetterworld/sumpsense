@@ -1,0 +1,6 @@
+{
+  "name": "sumpsense-16z-ha-screenshots",
+  "private": true,
+  "type": "module",
+  "dependencies": { "mqtt": "5.10.1", "playwright": "1.48.2" }
+}

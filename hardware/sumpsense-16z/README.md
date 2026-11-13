@@ -63,8 +63,8 @@ E01 liegt direkt hinter der Linie MAX (0,5 mm), E16 an der Spitze. Auf jeder Ele
 | E04 | GPIO22 | |
 | E05–E08 | GPIO14, GPIO13, GPIO12, GPIO11 | |
 | E09 | GPIO10 | |
-| E10 | GPIO9 | BOOT. 10 kΩ nach 3,3 V, Taster SW1 nach GND |
-| E11 | GPIO8 | 10 kΩ nach 3,3 V |
+| E10 | GPIO9 | BOOT. 1 MΩ nach 3,3 V, Taster SW1 nach GND |
+| E11 | GPIO8 | 1 MΩ nach 3,3 V |
 | E12–E16 | GPIO5, GPIO4, GPIO3, GPIO2, GPIO1 | |
 
 Weiter fest: **GPIO0** ist das Gate des AO3400A, 100 kΩ nach GND, kein Vorwiderstand. GPIO0 ist kein Strapping-Pin, das Ventil bleibt beim Start aus. **GPIO27 = D+**, **GPIO26 = D−**, ohne Serienwiderstand. **EN (Pin 17)** liegt direkt an 3,3 V, ohne die 10 kΩ und 1 µF aus dem Espressif-Guide. Kein 32-kHz-Quarz, keine Ferritperle, kein Buck.
@@ -75,22 +75,28 @@ Pinbelegung des QFN32 nach Espressif-Datenblatt v1.3, Bild 2-1 (Draufsicht, Pin 
 
 **SW1** (C&K KXT3, 3 × 2 mm, an der Unterkante neben R18, Beschriftung PAIR) zieht GPIO9 nach GND. Er ersetzt die frühere Lötbrücke J4, die Platine bleibt 14,0 × 125,0 mm.
 
-- **Kurz drücken:** Zigbee-Pairing starten (Netz verlassen und neu suchen).
-- **10 s halten:** Werksreset (Zigbee-Daten und Einstellungen löschen).
+- **Kurz:** Werte sofort senden; ohne Netz die Netzsuche neu starten.
+- **3 s:** Trocken-Kalibrierung der Elektroden.
+- **6 s:** Netz verlassen und neu pairen.
+- **12 s:** Werksreset (Zigbee-Daten und Einstellungen).
 - **Beim Einschalten gedrückt halten:** Download-Modus für den ersten Flash.
 
-GPIO9 ist zugleich die Stufe E10. Die Firmware treibt den Pin nie auf High, sondern entlädt nur nach GND und misst die Ladezeit über den Pull-up. Ein gedrückter Taster ist deshalb kein Kurzschluss, die Messung von E10 läuft dann in den Timeout und wird als Tastendruck gewertet.
+Ein neues Gerät sucht nach dem Einschalten von selbst ein offenes Netz.
+
+GPIO9 ist zugleich die Stufe E10. Die Firmware treibt den Pin nie auf High, sondern entlädt nur nach GND und misst die Ladezeit über R18. Ein gedrückter Taster ist deshalb kein Kurzschluss, die Messung von E10 läuft dann in den Timeout und wird als Tastendruck gewertet.
+
+**Warum 1 MΩ an GPIO8/GPIO9:** Der Pull-up sitzt auf der Pin-Seite des 100-kΩ-Serienwiderstands. Mit 10 kΩ stünde der Pin sofort auf 100/110 · 3,3 V ≈ 3,0 V, ganz gleich, wie weit die Elektrode geladen ist: E10 und E11 wären nicht messbar. Mit 1 MΩ startet der Pin bei ≈ 0,3 V und folgt der Elektrodenspannung, die Ladezeit (τ ≈ 1,1 MΩ · C) ist messbar. Als Strap reicht 1 MΩ, weil an beiden Pins im Ruhezustand kein Gleichstrom fließt.
 
 ## Flashen
 
-Leerer Flash bootet nur in den Download, wenn **GPIO8 = 1** und **GPIO9 = 0**. GPIO8 hat die 10 kΩ nach 3,3 V, GPIO9 zieht der Taster auf GND.
+Leerer Flash bootet nur in den Download, wenn **GPIO8 = 1** und **GPIO9 = 0**. GPIO8 hat 1 MΩ nach 3,3 V, GPIO9 zieht der Taster auf GND.
 
 1. SW1 gedrückt halten.
 2. 5 V und GND an J1 legen. J3 führt keine Versorgung.
 3. SW1 loslassen. USB an J3 (D+, D−). Der Port erscheint als `/dev/ttyACM*`. Ohne den 32-MHz-Quarz zählt USB nicht.
 4. Flashen, danach **Strom aus**. Ein Reset über USB liest den Strap nicht neu.
 
-Spätere Flashes brauchen den Taster nicht, solange die Firmware USB Serial/JTAG auf GPIO26/GPIO27 anlässt. Firmware und Bauanleitung: [`../../firmware/sumpsense-16z/`](../../firmware/sumpsense-16z/).
+Spätere Flashes brauchen den Taster nicht, solange die Firmware USB Serial/JTAG auf GPIO26/GPIO27 anlässt. Firmware, Gieß-Automatik, Einbindung in Home Assistant, Tuya und Google Home: [`../../firmware/README.md`](../../firmware/README.md#sumpsense-16z-zigbee).
 
 ## Antenne und HF
 
@@ -121,7 +127,7 @@ C-Nummern nur, wo sie geprüft sind. Der Rest ist die Klasse, ohne erfundene Num
 | C3, C4 | 10 µF | 0805 | Basic |
 | C5, C6 | 100 nF | 0402 | Basic |
 | R1–R16 | 100 kΩ | 0402 | Basic, Serie zur Elektrode |
-| R17, R18 | 10 kΩ | 0402 | Basic, GPIO8 und GPIO9 nach 3,3 V |
+| R17, R18 | 1 MΩ | 0402 | Basic, GPIO8 und GPIO9 nach 3,3 V (Strap) |
 | R20, R21, R22 | 0 Ω | 0402 | Basic, Quarz-, Antennen- und Reglerbrücke |
 | R23 | 100 kΩ | 0402 | Basic, Gate nach GND |
 | MH1 | M2,5 | Bohrung 2,7 mm | Clip-Loch |

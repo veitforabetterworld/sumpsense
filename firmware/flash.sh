@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
-# UPDI-Flash für SUMPSENSE-24I (ATtiny1616). Nutzung: ./flash.sh u1|u2
+# UPDI-Flash für SumpSense-24i (ATtiny1616). Ein Image für U1 und U2,
+# die Adresse wählt die Firmware über PA3 (auf der Platine fest verdrahtet).
+# Nutzung: UPDI_PORT=/dev/ttyACM0 ./flash.sh u1|u2
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 VENV="$ROOT/.venv-updi"
 PG="$VENV/bin/pymcuprog"
 CHIP="${1:-}"
+HEX="$ROOT/sumpsense-24i/sumpsense-24i.hex"
 
 usage() {
   echo "Nutzung: UPDI_PORT=/dev/ttyACM0 $0 u1|u2" >&2
@@ -13,44 +16,20 @@ usage() {
 }
 
 [[ "$CHIP" == u1 || "$CHIP" == u2 ]] || usage
+[[ -f "$HEX" ]] || { echo "Fehlt: $HEX (siehe firmware/README.md, Bauen)" >&2; exit 1; }
 
-ensure_pymcuprog() {
-  if [[ ! -x "$PG" ]]; then
-    python3 -m venv "$VENV"
-    "$VENV/bin/pip" install -q pymcuprog
-  fi
-}
-
-pick_port() {
-  if [[ -n "${UPDI_PORT:-}" ]]; then
-    echo "$UPDI_PORT"
-    return
-  fi
-  local c
-  for c in /dev/serial/by-id/* /dev/ttyACM* /dev/ttyUSB*; do
-    [[ -e "$c" ]] || continue
-    echo "$c"
-    return
-  done
-  echo "UPDI_PORT fehlt (z. B. /dev/ttyACM0)" >&2
-  exit 1
-}
-
-DEV=attiny1616
-PORT="$(pick_port)"
-HEX="$ROOT/${CHIP^^}.hex"
-COMMUNITY="$ROOT/community/${CHIP^^}.hex"
-
-if [[ ! -f "$HEX" ]]; then
-  if [[ -f "$COMMUNITY" ]]; then
-    echo "Hinweis: $HEX fehlt — Community-Image $COMMUNITY (I2C ≠ Seeed-Demo)." >&2
-    HEX="$COMMUNITY"
-  else
-    echo "Kein HEX: weder $HEX noch $COMMUNITY. Siehe firmware/README.md" >&2
-    exit 1
-  fi
+if [[ ! -x "$PG" ]]; then
+  python3 -m venv "$VENV"
+  "$VENV/bin/pip" install -q pymcuprog
 fi
 
-ensure_pymcuprog
-echo "Chip ${CHIP^^} ← $(basename "$HEX") über $PORT"
-"$PG" write -f "$HEX" -d "$DEV" -t uart -u "$PORT" --erase --verify
+PORT="${UPDI_PORT:-}"
+if [[ -z "$PORT" ]]; then
+  for c in /dev/serial/by-id/* /dev/ttyACM* /dev/ttyUSB*; do
+    [[ -e "$c" ]] && PORT="$c" && break
+  done
+fi
+[[ -n "$PORT" ]] || { echo "UPDI_PORT setzen (z. B. /dev/ttyACM0)" >&2; exit 1; }
+
+echo "Chip ${CHIP^^} <- $(basename "$HEX") über $PORT"
+"$PG" write -f "$HEX" -d attiny1616 -t uart -u "$PORT" --erase --verify

@@ -2,7 +2,15 @@ __pycache__/
 *.pyc
 *.kicad_prl
 firmware/.venv-updi/
-firmware/U1.hex
-firmware/U2.hex
 .history/
 ~*.lck
+firmware/*/build/
+firmware/sumpsense-16z/z2m/node_modules/
+firmware/sumpsense-24i/*.ino.t1616*
+firmware/sumpsense-16z/ha/node_modules/
+firmware/sumpsense-16z/ha/config/*
+!firmware/sumpsense-16z/ha/config/configuration.yaml
+!firmware/sumpsense-16z/ha/config/.storage/
+firmware/sumpsense-16z/ha/config/.storage/*
+!firmware/sumpsense-16z/ha/config/.storage/onboarding
+!firmware/sumpsense-16z/ha/config/.storage/auth

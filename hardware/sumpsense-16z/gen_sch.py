@@ -518,7 +518,7 @@ def build(sh):
         "U2 XC6206: 200 mA; der H2 zieht beim Senden (+20 dBm) bis 140 mA. R22 = 0-Ohm-Brücke. CHIP_EN direkt an 3,3 V.",
         "Quarz 32 MHz: R20 = 0 Ohm (statt 24 nH), C1/C2 = 12 pF C0G. Antenne A1 = TI DN007 (Net-Tie RF/GND), R21 = 0 Ohm.",
         "R1-R16 je 100k in Serie zu den Elektroden. E1 an der Linie MAX, E16 an der Spitze.",
-        "SW1: kurz = Zigbee-Pairing, 10 s = Werksreset. Beim Einschalten gedrückt: GPIO9 = 0, GPIO8 = 1 (R17) -> Download-Modus.",
+        "SW1: 6 s = neu pairen, 12 s = Werksreset. Beim Einschalten gedrückt: GPIO9 = 0, GPIO8 = 1 (R17 1M) -> Download-Modus.",
     ]
     for i, n in enumerate(notes):
         sh.text(n, 20.32, 215.9 + i * 3.81, 1.27, False)

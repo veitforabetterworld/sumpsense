@@ -1,0 +1,10 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2
+    volumes: ["./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro"]
+    ports: ["127.0.0.1:1883:1883"]
+  homeassistant:
+    image: ghcr.io/home-assistant/home-assistant:stable
+    volumes: ["./config:/config"]
+    ports: ["127.0.0.1:8123:8123"]
+    depends_on: [mosquitto]

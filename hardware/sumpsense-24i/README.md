@@ -46,11 +46,11 @@ Sechs Löcher **J1** am trockenen Ende, alle im gemeinsamen 2,54-mm-Raster (Drau
 | SCL, SDA | I2C | Betrieb (Pull-ups 4,7 kΩ auf der Platine) |
 | U1, U2 | UPDI des jeweiligen Chips | nur zum Flashen |
 
-Der Master liest **0x78** (U1) und **0x77** (U2), je **12** Werte.
+Der Master liest **0x78** (U1) und **0x77** (U2), je **12** Werte. Füllstand = nasse Stufen am Stück ab 0x77 Byte 0 (Spitze), weiter mit 0x78 Byte 0, × 5 mm.
 
-## Flashen (Adafruit UPDI Friend)
+## Firmware und Flashen
 
-GND und VCC vom UPDI Friend an GND/VCC, UPDI nacheinander an **U1**, dann **U2**. I2C dabei nicht angeschlossen, nur eine Spannungsquelle.
+Eine Firmware für beide Chips, I²C-kompatibel zur Seeed-Firmware (Adressen 0x78/0x77, ein Byte je Stufe). Die Adresse wählt die Firmware über PA3, das auf U1 an GND und auf U2 an VCC liegt. Flashen per UPDI (Adafruit UPDI Friend): GND und VCC an GND/VCC, UPDI nacheinander an **U1** und **U2**, I²C dabei nicht angeschlossen.
 
 ```bash
 cd ../../firmware
@@ -58,9 +58,7 @@ UPDI_PORT=/dev/ttyACM0 ./flash.sh u1
 UPDI_PORT=/dev/ttyACM0 ./flash.sh u2
 ```
 
-Details, Firmware-Quellen, Dump vom Original-Sensor: [`../../firmware/README.md`](../../firmware/README.md).
-
-**Firmware:** Seeed veröffentlicht die MCU-Firmware nicht. Das Seeed-Protokoll liefert 12 Werte von 0x78 und **8** von 0x77; für die 24i muss U2 ebenfalls 12 Werte liefern (PC0–PC3 zusätzlich) und der Master 2 × 12 lesen. Die Community-Firmware (`community/`) ist dafür anzupassen.
+Protokoll, Vergleich mit dem Seeed-Original, Bauen und Tests: [`../../firmware/README.md`](../../firmware/README.md#sumpsense-24i-ic).
 
 ## Aufbau
 
