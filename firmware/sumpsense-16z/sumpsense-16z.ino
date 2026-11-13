@@ -10,7 +10,7 @@
  *   EP 6  Binary Input   "Stoerung"        Laufzeit überschritten / Sensorfehler
  * Dazu OTA-Client (Cluster 0x0019) auf EP 1.
  *
- * Taster SW1 (GPIO9):
+ * Pairing JP1 PAIR (GPIO9):
  *   kurz      Werte sofort senden; ohne Netz: Pairing neu starten
  *   3 s       Trocken-Kalibrierung (Stab muss trocken sein)
  *   6 s       Netz verlassen und neu pairen
@@ -116,7 +116,7 @@ static void onUpper(float v) {
 
 /* ------------------------------------------------------------ Messung */
 static void measure() {
-  if (ss_button_pressed()) return;        /* E10 teilt sich den Pin mit SW1 */
+  if (ss_button_pressed()) return;        /* E10 teilt sich den Pin mit JP1 PAIR */
   uint8_t timeouts = ss_sense_all(raw);
   if (ss_button_pressed()) return;
   if (!have_ref) calibrate_dry();         /* erster Start: trocken annehmen */

@@ -506,11 +506,11 @@ def build(sh):
             J(XJ, t[p])
             sh.power("+3V3", *sh.pt(pr, "2")[:2])
         if net == "IO9":
-            # SW1: Taster nach GND (Pairing im Betrieb, BOOT beim Einschalten)
-            sh.place("SW1", "Switch:SW_Push", XJ + 5.08, t[p] + 10.16, 90, ref_off=(2.54, -1.27), val_off=(2.54, 1.27))
-            a, c = sorted((sh.pt("SW1", k_)[:2] for k_ in "12"), key=lambda q: q[1])
-            W((XJ, t[p]), (XJ, a[1] - 2.54), (a[0], a[1] - 2.54), a)
-            sh.power("GND", *c)
+            # JP1 PAIR auf Platine (zig:pair_pads), Schaltplan nur symbolisch
+            sh.place("JP1", "Connector_Generic:Conn_01x02", XJ + 5.08, t[p] + 10.16, 0, ref_off=(-5.08, -2.54), val_off=(-5.08, 3.81))
+            p1, p2 = (sh.pt("JP1", "1")[:2], sh.pt("JP1", "2")[:2])
+            W((XJ, t[p]), p1)
+            sh.power("GND", *p2)
 
     # ------------------------------------------------ Hinweise, Mechanik
     notes = [
@@ -518,7 +518,7 @@ def build(sh):
         "U2 XC6206: 200 mA; der H2 zieht beim Senden (+20 dBm) bis 140 mA. R22 = 0-Ohm-Brücke. CHIP_EN direkt an 3,3 V.",
         "Quarz 32 MHz: R20 = 0 Ohm (statt 24 nH), C1/C2 = 12 pF C0G. Antenne A1 = TI DN007 (Net-Tie RF/GND), R21 = 0 Ohm.",
         "R1-R16 je 100k in Serie zu den Elektroden. E1 an der Linie MAX, E16 an der Spitze.",
-        "SW1: 6 s = neu pairen, 12 s = Werksreset. Beim Einschalten gedrückt: GPIO9 = 0, GPIO8 = 1 (R17 1M) -> Download-Modus.",
+        "JP1 PAIR: GPIO9 und GND loeten/kurzschliessen (wie frueher SW1). 6 s = neu pairen, 12 s = Werksreset. Beim Einschalten: GPIO9 = 0, GPIO8 = 1 -> Download.",
     ]
     for i, n in enumerate(notes):
         sh.text(n, 20.32, 215.9 + i * 3.81, 1.27, False)

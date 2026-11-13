@@ -32,7 +32,7 @@ extern const uint8_t SS_STAGE_GPIO[SS_STAGES];
 void     ss_sense_begin(void);
 /* misst alle Stufen (Median aus 5), gibt die Zahl der Timeouts zurück */
 uint8_t  ss_sense_all(uint32_t out[SS_STAGES]);
-/* Taster SW1 gedrückt? (GPIO9 liest Low, während er losgelassen ist) */
+/* JP1 PAIR kurz? (GPIO9 liest Low, wenn PAIR geschlossen) */
 bool     ss_button_pressed(void);
 
 #endif

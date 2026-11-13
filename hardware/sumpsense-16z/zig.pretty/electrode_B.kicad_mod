@@ -1,0 +1,74 @@
+(footprint "electrode_B"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "B.Cu")
+	(descr "Kapazitive Elektrode Unterseite (Wasserseite Rohr)")
+	(tags "electrode sense")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1111111-1111-4111-8111-111111111101")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(property "Value" "E13"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1111111-1111-4111-8111-111111111102")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1111111-1111-4111-8111-111111111103")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1111111-1111-4111-8111-111111111104")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd board_only exclude_from_bom exclude_from_pos_files)
+	(fp_text user "13"
+		(at 0 6.4 0)
+		(layer "B.SilkS")
+		(uuid "b1111111-1111-4111-8111-111111111105")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 3.4 12.5)
+		(layers "B.Cu")
+		(roundrect_rratio 0.15)
+		(uuid "b1111111-1111-4111-8111-111111111106")
+	)
+	(embedded_fonts no)
+)

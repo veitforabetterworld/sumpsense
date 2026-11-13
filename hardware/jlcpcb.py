@@ -34,9 +34,13 @@ LCSC = {
     ("10uF", "C_0805_2012Metric"): "C15850",
     ("AO3400A", "SOT-23"): "C20917",
     ("XC6206P332MR", "SOT-23-3"): "C5446",
+    ("ESP32-H2", "QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm"): "C22470214",
+    ("32MHz", "Crystal_SMD_3225-4Pin_3.2x2.5mm"): "C9009",
+    ("1M", "R_0402_1005Metric"): "C25775",
+    ("SS14", "D_SMA"): "C2480",
 }
-# Kupfer-Footprints ohne Bauteil (Elektroden, Antenne) gehören nicht in BOM/CPL.
-NO_PART = ("E", "A1")
+# Kupfer-Footprints ohne Bauteil (Elektroden, Antenne, Pairing-Pads) gehören nicht in BOM/CPL.
+NO_PART = ("E", "A1", "JP1")
 
 
 def parts(pcb):
