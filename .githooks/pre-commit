@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# Prüft die Boardqualität (DRC, Parität, ERC), wenn Platinendateien committet werden.
+# Aktivieren: git config core.hooksPath .githooks   (einmalig pro Klon)
+# Notfalls überspringen: git commit --no-verify
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+
+boards=$(git diff --cached --name-only --diff-filter=ACMR \
+  | grep -E '^hardware/[^/]+/' \
+  | grep -E '\.(kicad_pcb|kicad_sch|kicad_pro|kicad_dru|kicad_mod|kicad_sym)$|/fp-lib-table$|/sym-lib-table$|/gen_sch\.py$' \
+  | cut -d/ -f2 | sort -u || true)
+[ -z "$boards" ] && exit 0
+
+# Geprüft wird der Arbeitsstand; nicht gestagte Änderungen an Platinen verfälschen das Ergebnis.
+if ! git diff --quiet -- $(printf 'hardware/%s ' $boards); then
+  echo "pre-commit: Platinendateien haben nicht gestagte Änderungen – erst stagen oder stashen." >&2
+  exit 1
+fi
+
+PY=""
+for c in python3 python py; do   # unter Windows ist python3 oft nur der Store-Platzhalter
+  if command -v "$c" >/dev/null && "$c" -c "import sys; sys.exit(sys.version_info < (3, 8))" 2>/dev/null; then PY=$c; break; fi
+done
+[ -n "$PY" ] || { echo "pre-commit: kein Python 3 gefunden" >&2; exit 1; }
+echo "pre-commit: Boardprüfung für $(echo $boards)"
+if ! "$PY" hardware/check_boards.py $boards; then
+  echo "pre-commit: Boardprüfung fehlgeschlagen (Commit abgebrochen)." >&2
+  exit 1
+fi
+
+# Fertigungsdaten sollten mit der Platine zusammen committet werden.
+for b in $boards; do
+  if git diff --cached --name-only | grep -q "^hardware/$b/$b\.kicad_pcb$" \
+     && ! git diff --cached --name-only | grep -q "^hardware/$b/jlcpcb/"; then
+    echo "pre-commit: Hinweis – $b.kicad_pcb geändert, aber keine JLCPCB-Daten (python hardware/jlcpcb.py)." >&2
+  fi
+done

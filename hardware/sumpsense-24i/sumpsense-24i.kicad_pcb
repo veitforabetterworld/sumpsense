@@ -2763,7 +2763,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm"
+	(footprint "ssi:VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm"
 		(layer "F.Cu")
 		(uuid "6a20bbbd-5761-40e1-abec-f4b1ae5c87f9")
 		(at 9.3 3.275)
@@ -2910,7 +2910,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -2.12 -0.8) (xy -2.45 -0.56) (xy -2.45 -1.04)
+				(xy -1.35 -1.85) (xy -1.75 -1.85) (xy -1.75 -1.45)
 			)
 			(stroke
 				(width 0.12)
@@ -4254,7 +4254,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Package_DFN_QFN:VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm"
+	(footprint "ssi:VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm"
 		(layer "F.Cu")
 		(uuid "7cf75b73-55b4-4368-83d8-ea1c7cac77ee")
 		(at 9.3 11.2 90)
@@ -4401,7 +4401,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -2.12 -0.8) (xy -2.45 -0.56) (xy -2.45 -1.04)
+				(xy -1.35 -1.85) (xy -1.75 -1.85) (xy -1.75 -1.45)
 			)
 			(stroke
 				(width 0.12)

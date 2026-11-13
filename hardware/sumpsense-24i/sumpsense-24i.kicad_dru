@@ -1,0 +1,5 @@
+(version 1)
+# Einzige erlaubte Ausnahme: Schraubenkopf MH1 darf Courtyards anderer Bauteile überdecken.
+(rule "MH1 Schraubenkopf"
+	(condition "A.Reference == 'MH1' || B.Reference == 'MH1'")
+	(constraint courtyard_clearance (min -10mm)))
