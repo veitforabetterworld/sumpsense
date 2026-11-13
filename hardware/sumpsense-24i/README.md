@@ -8,7 +8,7 @@
 
 1. [`jlcpcb/`](jlcpcb/): Gerber-ZIP, BOM, CPL.
 2. Neu: `python3 ../jlcpcb.py sumpsense-24i`
-3. **PCBA:** BOM/CPL hochladen; ATtiny-Drehung in JLC-Vorschau prüfen.
+3. **PCBA:** alle drei hochladen; Vias **0,45/0,3 mm** (Standardloch, kein 0,2-mm-Aufpreis). Economic: **Extended** für ATtiny (**C507118**, zwei Stück, eine LCSC-Zeile). **JLC-Vorschau:** Pin-1-Markierung bei U1/U2 mit Footprint prüfen (CPL-Drehung ist korrigiert).
 
 ## Anschluss
 

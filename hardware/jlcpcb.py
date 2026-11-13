@@ -36,7 +36,17 @@ LCSC = {
     ("XC6206P332MR", "SOT-23-3"): "C5446",
     ("ESP32-H2", "QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm"): "C22470214",
     ("32MHz", "Crystal_SMD_3225-4Pin_3.2x2.5mm"): "C9009",
-    ("1M", "R_0402_1005Metric"): "C25775",
+    ("1M", "R_0402_1005Metric"): "C26083",
+    ("B5819W", "D_SOD-123"): "C8598",
+    ("ATtiny1616", "VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm"): "C507118",
+}
+# Zusatzdrehung (CCW, Grad) auf die KiCad-Lage. JLCs SOT-23-3 hat Pin 1
+# unten rechts (EasyEDA …-BR), KiCad oben links. Diode, Quarz und QFN
+# liegen schon deckungsgleich, Chip-R/C sind drehsymmetrisch.
+CPL_ROT = {
+    ("AO3400A", "SOT-23"): 180,
+    ("XC6206P332MR", "SOT-23-3"): 180,
+    ("ATtiny1616", "VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm"): 90,
 }
 # Kupfer-Footprints ohne Bauteil (Elektroden, Antenne, Pairing-Pads) gehören nicht in BOM/CPL.
 NO_PART = ("E", "A1", "JP1")
@@ -103,7 +113,8 @@ def export(board):
         w.writerow(["Designator", "Mid X", "Mid Y", "Layer", "Rotation"])
         for ref, val, fp, x, y, rot, side in sorted(rows, key=lambda r: natural(r[0])):
             # KiCad-y zeigt nach unten, Fertigung nach oben
-            w.writerow([ref, f"{x:.4f}mm", f"{-y:.4f}mm", "Top" if side == "top" else "Bottom", f"{rot % 360:.0f}"])
+            rot = (rot + CPL_ROT.get((val, fp), 0)) % 360
+            w.writerow([ref, f"{x:.4f}mm", f"{-y:.4f}mm", "Top" if side == "top" else "Bottom", f"{rot:.0f}"])
     missing = sorted({v for (v, fp) in groups if (v, fp) not in LCSC})
     print(board, "->", os.path.relpath(out, HERE), "| ohne LCSC-Nummer:", ", ".join(missing) or "-")
 
