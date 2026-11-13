@@ -5304,7 +5304,7 @@
 				)
 			)
 		)
-		(property "Value" "SS14"
+		(property "Value" "B5819W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "6b705db2-23f3-4042-87fe-fec320a325ca")
@@ -7766,7 +7766,7 @@
 		(uuid "14ae8526-2e50-4fba-9fac-1a1b191166ad")
 	)
 	(gr_text "PAIR"
-		(at 102.22 23.85 90)
+		(at 99.4 24.9 90)
 		(layer "F.SilkS")
 		(uuid "ca89a52d-1f27-426c-b88b-54fabe0fe1c5")
 		(effects

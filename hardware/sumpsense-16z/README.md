@@ -7,8 +7,8 @@
 ## Platine bestellen (JLCPCB)
 
 1. [`jlcpcb/`](jlcpcb/): Gerber-ZIP, BOM, CPL.
-2. Neu: `python3 ../jlcpcb.py sumpsense-16z`
-3. **PCBA:** alle drei hochladen; Vias **0,6/0,3 mm** (sieben enge 0,5/0,3). Silk nur Oberseite. Economic: **2× Extended** (H2, Quarz). **JP1 PAIR** nicht bestücken (nur Kupfer auf der Platine).
+2. Neu generieren: `python3 ../jlcpcb.py sumpsense-16z`
+3. **PCBA:** Gerber, BOM und CPL zusammen hochladen. **JP1 PAIR** nicht bestücken (nur Kupfer auf der Platine).
 
 ## Anschluss
 
