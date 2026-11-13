@@ -445,11 +445,20 @@ def build(sh):
         J(x, YQ)
         gnd(ref, "1")
 
-    # ------------------------------------------------ Antenne
+    # ------------------------------------------------ Antenne (DN007 + π, C7/C8 = 1 pF C0G)
     ya = u["32"][1]
     YA = 182.88
-    W(u["32"][:2], (172.72, ya), (172.72, YA), (163.83, YA))
+    W(u["32"][:2], (172.72, ya), (172.72, YA), (167.64, YA))
+    J(167.64, YA)
+    sh.place("C8", "Device:C", 167.64, YA + 3.81, 180, ref_off=(6.35, -1.27), val_off=(7.62, 1.27), value="1pF")
+    gnd("C8", "1")
     sh.place("R21", "Device:R", 160.02, YA, 90, ref_off=(-3.81, -2.54), val_off=(0.64, -2.54))
+    r21 = {p: sh.pt("R21", p)[:2] for p in "12"}
+    W((167.64, YA), r21["2"])
+    W(r21["1"], (156.21, YA))
+    J(156.21, YA)
+    sh.place("C7", "Device:C", 156.21, YA + 3.81, 180, ref_off=(6.35, -1.27), val_off=(7.62, 1.27), value="1pF")
+    gnd("C7", "1")
     sh.place("A1", "Device:Antenna_Shield", 149.86, 165.1, 0, ref_off=(-8.89, -2.54), val_off=(-8.89, 0))
     a1 = {p: sh.pt("A1", p)[:2] for p in "12"}
     W((156.21, YA), (149.86, YA), a1["1"])
@@ -516,7 +525,7 @@ def build(sh):
     notes = [
         "J1: 5 V an Pin 5V, Magnetventil zwischen 5V und VLV. Q1 schaltet nach GND, D1 = Freilaufdiode, R23 hält das Gate aus.",
         "U2 XC6206: 200 mA; der H2 zieht beim Senden (+20 dBm) bis 140 mA. R22 = 0-Ohm-Brücke. CHIP_EN direkt an 3,3 V.",
-        "Quarz 32 MHz: R20 = 0 Ohm (statt 24 nH), C1/C2 = 12 pF C0G. Antenne A1 = TI DN007 (Net-Tie RF/GND), R21 = 0 Ohm.",
+        "Quarz 32 MHz: R20 = 0 Ohm (statt 24 nH), C1/C2 = 12 pF C0G. Antenne A1 = TI DN007; π R21 (0R), C7 und C8 je 1 pF C0G (C1550); Zuleitung 1,0 mm, letzte 0,28 mm in Pin 32.",
         "R1-R16 je 100k in Serie zu den Elektroden. E1 an der Linie MAX, E16 an der Spitze.",
         "JP1 PAIR: GPIO9 und GND loeten/kurzschliessen (wie frueher SW1). 6 s = neu pairen, 12 s = Werksreset. Beim Einschalten: GPIO9 = 0, GPIO8 = 1 -> Download.",
     ]

@@ -1,16 +1,43 @@
+# Python
 __pycache__/
 *.pyc
+.Python
+.venv/
+venv/
+
+# KiCad (Projekt-*.kicad_pro bleibt versioniert)
 *.kicad_prl
+*.kicad_pcb.kicad_pro
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups/
+
+# KiCad-Tools / Render (siehe hardware/kicad_tools.py)
+**/.render-filled.kicad_pcb
+**/.render-filled.kicad_pro
+**/.render-filled.kicad_prl
+**/preview/.layout-flat.svg
+
+# JLCPCB: nur ZIP + BOM/CPL im Repo; entpackte Gerber sind Export-Artefakt
+hardware/*/jlcpcb/gerber/
+
+# Firmware bauen / flashen
 firmware/.venv-updi/
-.history/
-~*.lck
 firmware/*/build/
-firmware/sumpsense-16z/z2m/node_modules/
 firmware/sumpsense-24i/*.ino.t1616*
+
+# SumpSense-16z Home Assistant (Demo)
 firmware/sumpsense-16z/ha/node_modules/
+firmware/sumpsense-16z/z2m/node_modules/
 firmware/sumpsense-16z/ha/config/*
 !firmware/sumpsense-16z/ha/config/configuration.yaml
 !firmware/sumpsense-16z/ha/config/.storage/
 firmware/sumpsense-16z/ha/config/.storage/*
 !firmware/sumpsense-16z/ha/config/.storage/onboarding
 !firmware/sumpsense-16z/ha/config/.storage/auth
+
+# Editor / OS
+.history/
+~*.lck
+*~
+.DS_Store

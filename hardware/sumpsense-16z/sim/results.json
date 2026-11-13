@@ -1,0 +1,42 @@
+{
+  "f_ghz": 2.45,
+  "stackup_mm": 1.6,
+  "er": 4.3,
+  "z0_ohm": {
+    "w_0.46mm": 116.6,
+    "w_1.0mm": 88.3,
+    "w_0.2mm_neck": 147.4
+  },
+  "trace_width_mm_layout": 1.0,
+  "trace_width_mm_true_50ohm": 3.14,
+  "length_antenna_to_pi_mm": 0.63,
+  "length_pi_to_pin_mm": 18.3,
+  "z_antenna_assumed_ohm": [
+    50.0,
+    8.0
+  ],
+  "stuffed_c7_1pF_c8_1pF": {
+    "c7_pf": 1.0,
+    "c8_pf": 1.0,
+    "s11_db": -16.04,
+    "power_to_antenna": 0.975,
+    "zin_ohm": [
+      49.21,
+      15.83
+    ]
+  },
+  "best_lumped_pi": {
+    "c7_pf": 0.2,
+    "c8_pf": 0.5,
+    "s11_db": -31.81,
+    "zin_ohm": [
+      50.83,
+      -2.45
+    ]
+  },
+  "layout_bom_recommendation": {
+    "c7": "1pF",
+    "c8_pf": 1.0,
+    "note": "C7 und C8: 1 pF C0G 0402 C1550 (Preferred). Kleinstes Basic-C0G ist 10 pF (C32949) und schlie\u00dft den Feed bei 2,45 GHz kurz."
+  }
+}
