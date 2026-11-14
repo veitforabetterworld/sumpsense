@@ -5,9 +5,16 @@
 #include "esp_cpu.h"
 #include "esp_rom_sys.h"
 
+#if SS_BOARD == 2
+/* v2: Reihenfolge folgt der Modul-Pinbelegung (Leitungen ohne Kreuzung) */
+const uint8_t SS_STAGE_GPIO[SS_STAGES] = {
+  10, 11, 8, 9, 25, 22, 23, 24, 5, 4, 12, 14, 13, 1, 3, 2
+};
+#else
 const uint8_t SS_STAGE_GPIO[SS_STAGES] = {
   11, 12, 13, 14, 22, 23, 24, 25, 10, 9, 8, 5, 4, 3, 2, 1
 };
+#endif
 
 #define HW            (&GPIO)
 #define CYCLES_PER_US (CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ)

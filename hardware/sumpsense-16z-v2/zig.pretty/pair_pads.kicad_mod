@@ -1,0 +1,70 @@
+(footprint "pair_pads"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(uuid "c8f4a102-9e2b-4f6d-8c31-0a44b8e91d03")
+	(property "Reference" "REF**"
+		(at 0 -2.2 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d9a0b213-1f3c-4a7e-9d42-1b55c9f02e14")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(property "Value" "PAIR"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eab1c324-2a4d-4b8f-0e53-2c66d0a13f25")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fbc2d435-3b5e-4c90-1f64-3d77e1b24a36")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Pairing solder pads"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0cd3e546-4c6f-4da1-2a75-4e88f2c35b47")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd exclude_from_bom exclude_from_pos_files)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" smd roundrect
+		(at -0.85 0)
+		(size 1.0 0.9)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "2ef5a768-6e81-4fc3-4c97-6faa4e57ad69")
+	)
+	(pad "2" smd roundrect
+		(at 0.85 0)
+		(size 1.0 0.9)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "3f06b879-7f92-40d4-5da8-7abb5f68be7a")
+	)
+	(embedded_fonts no)
+)

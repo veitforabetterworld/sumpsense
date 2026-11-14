@@ -41,3 +41,4 @@ firmware/sumpsense-16z/ha/config/.storage/*
 ~*.lck
 *~
 .DS_Store
+firmware/*/build-v2/

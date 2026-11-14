@@ -24,6 +24,12 @@
 
 #define SS_SENSE_TIMEOUT 0xFFFFFFFFu
 
+/* Platinenvariante: 1 = SumpSense-16z (ESP32-H2 + Quarz + Leiterantenne),
+ * 2 = SumpSense-16z-v2 (ESP32-H2-MINI-1). Bauen mit -DSS_BOARD=2 oder hier ändern. */
+#ifndef SS_BOARD
+#define SS_BOARD 1
+#endif
+
 /* GPIO je Stufe, Index 0 = E01 (an MAX) ... 15 = E16 (Spitze) */
 extern const uint8_t SS_STAGE_GPIO[SS_STAGES];
 #define SS_GPIO_BUTTON 9

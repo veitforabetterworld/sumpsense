@@ -1,0 +1,63 @@
+(footprint "electrode"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(uuid "0ad36767-32dc-4cd0-9573-e8578fe6d758")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bd288ef5-7bdb-40f1-b6ec-7e5139962f20")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(property "Value" "E13"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "937f772f-4dea-471d-ba98-bf6c82f16365")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "32136ee8-0bf8-457c-9bfb-9840f03294c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b69b1086-331c-41aa-a0ba-f04d0ef33e3d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 3.4 13.34)
+		(layers "F.Cu")
+		(roundrect_rratio 0.15)
+		(uuid "2fb9bd51-2a82-4aa3-846f-f8ad0979c67c")
+	)
+	(embedded_fonts no)
+	)

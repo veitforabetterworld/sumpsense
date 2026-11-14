@@ -1,6 +1,6 @@
 """Fertigungsdaten für JLCPCB: Gerber + Bohrdaten (ZIP), BOM und Bestückungsliste (CPL).
 
-  python3 jlcpcb.py sumpsense-16z      # oder sumpsense-24i
+  python3 jlcpcb.py sumpsense-16z      # oder sumpsense-16z-v2, sumpsense-24i
   python3 jlcpcb.py                    # beide Platinen
 
 Ausgabe nach <platine>/jlcpcb/. Braucht KiCad (kicad-cli), siehe kicad_tools.py.
@@ -33,6 +33,9 @@ LCSC = {
     ("1pF", "C_0402_1005Metric"): "C1550",
     ("4.7uF", "C_0402_1005Metric"): "C23733",
     ("10uF", "C_0805_2012Metric"): "C15850",
+    ("10uF", "C_0603_1608Metric"): "C19702",
+    ("1uF", "C_0402_1005Metric"): "C52923",
+    ("ESP32-H2-MINI-1-H4S", "ESP32-H2-MINI-1"): "C47967030",
     ("AO3400A", "SOT-23"): "C20917",
     ("XC6206P332MR", "SOT-23-3"): "C5446",
     ("ESP32-H2", "QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm"): "C22470214",
@@ -121,6 +124,6 @@ def export(board):
 
 
 if __name__ == "__main__":
-    boards = sys.argv[1:] or ["sumpsense-16z", "sumpsense-24i"]
+    boards = sys.argv[1:] or ["sumpsense-16z", "sumpsense-16z-v2", "sumpsense-24i"]
     for b in boards:
         export(b)

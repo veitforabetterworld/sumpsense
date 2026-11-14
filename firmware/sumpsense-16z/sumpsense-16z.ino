@@ -186,7 +186,12 @@ void setup() {
   zbLevel.setAnalogInputDescription("Wasserstand");
   zbLevel.setAnalogInputResolution(SS_STEP_MM);
   zbLevel.setAnalogInputMinMax(0, SS_MAX_MM);
-  zbLevel.addOTAClient(FW_VERSION, FW_VERSION, 1);
+  // Hardware-Version und Image-Typ je Platine, damit OTA nur passende Images annimmt
+#if SS_BOARD == 2
+  zbLevel.addOTAClient(FW_VERSION, FW_VERSION, 2, 0x1001, 0x1012);
+#else
+  zbLevel.addOTAClient(FW_VERSION, FW_VERSION, 1, 0x1001, 0x1011);
+#endif
 
   zbValve.setManufacturerAndModel("SumpSense", "SumpSense-16z");
   zbValve.onPowerOutletChange(onValve);

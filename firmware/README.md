@@ -47,6 +47,14 @@ arduino-cli upload -b "esp32:esp32:esp32h2:ZigbeeMode=zczr,PartitionScheme=zigbe
 
 Danach: USB oder OTA (Zigbee2MQTT). Hardware: [`../hardware/sumpsense-16z/README.md`](../hardware/sumpsense-16z/README.md).
 
+**SumpSense-16z-v2** (ESP32-H2-MINI-1, [Hardware](../hardware/sumpsense-16z-v2/README.md)): gleiche Firmware, andere GPIO-Zuordnung. Mit `SS_BOARD=2` bauen (oder in `ss_sense.h` umstellen). PAIR und D+/D− sind dort Lötpads auf der Unterseite.
+
+```bash
+arduino-cli compile -b "esp32:esp32:esp32h2:ZigbeeMode=zczr,PartitionScheme=zigbee_zczr,CDCOnBoot=cdc" --build-property "compiler.cpp.extra_flags=-DSS_BOARD=2" --output-dir sumpsense-16z/build-v2 sumpsense-16z
+```
+
+OTA unterscheidet die Platinen über den Image-Typ (v1 `0x1011`, v2 `0x1012`) und die Hardware-Version (1/2).
+
 ### Pairing & Bedienung (JP1 PAIR)
 
 | PAIR | Wirkung |
