@@ -88,9 +88,11 @@ def export(board):
     os.makedirs(tmp, exist_ok=True)
     cli, _ = kicad_tools.kicad_commands()
     layers = LAYERS
-    # 16z hat kein Silk auf der Unterseite (Skala liegt oben).
+    # 16z hat kein Silk auf der Unterseite (Skala liegt oben), 16z-v2 nur auf der Unterseite.
     if board == "sumpsense-16z":
         layers = LAYERS.replace("B.Silkscreen,", "")
+    elif board == "sumpsense-16z-v2":
+        layers = LAYERS.replace("F.Silkscreen,", "")
     subprocess.run(cli + ["pcb", "export", "gerbers", "--layers", layers, "--subtract-soldermask",
                     "--check-zones", "-o", tmp + os.sep, pcb], check=True, capture_output=True)
     subprocess.run(cli + ["pcb", "export", "drill", "--format", "excellon", "--excellon-units", "mm",

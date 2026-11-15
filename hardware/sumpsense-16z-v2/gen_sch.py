@@ -477,21 +477,18 @@ def build(sh):
             J(XJ, t[p])
             sh.power("+3V3", *sh.pt(pr, "2")[:2])
         if net == "IO9":
-            # JP1 PAIR: zwei Lötpads auf der Unterseite (zig:pair_pads)
-            sh.place("JP1", "Connector_Generic:Conn_01x02", XJ + 5.08, t[p] + 10.16, 0, ref_off=(-5.08, -2.54), val_off=(-5.08, 3.81))
-            pio = "1" if sh.net_of("JP1", "1") == "IO9" else "2"
-            pgnd = "2" if pio == "1" else "1"
-            pi, pg = sh.pt("JP1", pio)[:2], sh.pt("JP1", pgnd)[:2]
+            # JP1 PAIR: ein Lötpad auf der Unterseite, direkt neben dem GND-Pad von J1 (zig:solder_pad)
+            sh.place("JP1", "Connector_Generic:Conn_01x01", XJ + 5.08, t[p] + 10.16, 180, ref_off=(2.54, -2.54), val_off=(2.54, 2.54))
+            pi = sh.pt("JP1", "1")[:2]
             W((XJ, t[p]), (XJ, pi[1]), pi)
-            sh.power("GND", *pg)
 
     # ------------------------------------------------ Hinweise, Mechanik
     notes = [
-        "J1: 5 V an Pin 5V, Magnetventil zwischen 5V und VLV. Q1 schaltet nach GND, D1 = Freilaufdiode, R23 hält das Gate aus.",
+        "J1: Lötpads GND, VLV, 5V auf der Unterseite am Antennenende; 5 V an 5V, Magnetventil zwischen 5V und VLV. Q1 schaltet nach GND, D1 = Freilaufdiode, R23 hält das Gate aus.",
         "U2 XC6206: 200 mA; das Modul zieht beim Senden bis 140 mA. C4 10 uF am Modul. EN: R19 10k / C6 1 uF (Einschaltverzögerung).",
         "U1 ESP32-H2-MINI-1-H4S: 32-MHz-Quarz und PCB-Antenne im Modul. VBAT bleibt offen (im Modul an 3V3). Antennenende an der Platinenkante, darunter kein Kupfer.",
         "R1-R16 je 100k in Serie zu den Elektroden. E1 an der Linie MAX, E16 an der Spitze. GPIO-Zuordnung der v2 siehe Netznamen.",
-        "J3 (D+, D-) und JP1 PAIR sind Lötpads auf der Unterseite unter dem Modul. JP1 kurzschließen = GPIO9 auf GND: 6 s = neu pairen, 12 s = Werksreset, beim Einschalten = Download.",
+        "J3 (D+, D-) und JP1 PAIR sind Lötpads in derselben Reihe am Antennenende. PAIR mit dem GND-Pad daneben brücken = GPIO9 auf GND: 6 s = neu pairen, 12 s = Werksreset, beim Einschalten = Download.",
     ]
     for i, n in enumerate(notes):
         sh.text(n, 20.32, 215.9 + i * 3.81, 1.27, False)

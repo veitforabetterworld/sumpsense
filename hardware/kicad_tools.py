@@ -167,6 +167,8 @@ def model_dir():
         env,
         os.path.expanduser("~/.local/share/kicad/10.0/3dmodels"),
         "/usr/share/kicad/3dmodels",
+        os.path.join(os.environ.get("LOCALAPPDATA", ""), "Programs", "KiCad", "10.0", "share", "kicad", "3dmodels"),
+        "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels",
     ]
     for path in candidates:
         if path and os.path.isdir(os.path.join(path, "Resistor_SMD.3dshapes")):

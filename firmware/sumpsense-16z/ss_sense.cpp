@@ -8,7 +8,7 @@
 #if SS_BOARD == 2
 /* v2: Reihenfolge folgt der Modul-Pinbelegung (Leitungen ohne Kreuzung) */
 const uint8_t SS_STAGE_GPIO[SS_STAGES] = {
-  10, 11, 8, 9, 25, 22, 23, 24, 5, 4, 12, 14, 13, 1, 3, 2
+  10, 11, 8, 9, 22, 25, 23, 24, 5, 4, 12, 14, 13, 1, 3, 2
 };
 #else
 const uint8_t SS_STAGE_GPIO[SS_STAGES] = {
